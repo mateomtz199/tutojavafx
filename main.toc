@@ -1,3 +1,5 @@
 \babel@toc {spanish}{}
 \contentsline {section}{\numberline {1}Por que el proyecto}{2}{section.1}%
 \contentsline {section}{\numberline {2}Introducción}{2}{section.2}%
+\contentsline {section}{\numberline {3}Lo que aprenderás}{2}{section.3}%
+\contentsline {section}{\numberline {4}Cómo usar este tutorial}{3}{section.4}%
