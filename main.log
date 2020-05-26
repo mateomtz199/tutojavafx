@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.25)  21 MAY 2020 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.25)  26 MAY 2020 15:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -350,30 +350,319 @@ File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
- (main.aux (secciones/1-Portada.aux)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tcolorbox\tcolorbox.s
+ty"
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgf.st
+y"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfrcs.
+sty"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfut
+il-common.tex"
+\pgfutil@everybye=\toks24
+\pgfutil@tempdima=\dimen154
+\pgfutil@tempdimb=\dimen155
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfut
+il-common-lists.tex"))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfut
+il-latex.def"
+\pgfutil@abb=\box50
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everyshi.sty"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfrc
+s.code.tex"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf\pgf.revision.te
+x")
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/basiclayer\pgfcor
+e.sty"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/systemlayer\pgfsy
+s.sty"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+sys.code.tex"
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfke
+ys.code.tex"
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/utilities\pgfke
+ysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks27
+))
+\pgf@x=\dimen156
+\pgf@y=\dimen157
+\pgf@xa=\dimen158
+\pgf@ya=\dimen159
+\pgf@xb=\dimen160
+\pgf@yb=\dimen161
+\pgf@xc=\dimen162
+\pgf@yc=\dimen163
+\pgf@xd=\dimen164
+\pgf@yd=\dimen165
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count294
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+.cfg"
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+sys-pdftex.def"
+File: pgfsys-pdftex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+sys-common-pdf.def"
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+syssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count295
+\pgfsyssoftpath@bigbuffer@items=\count296
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/systemlayer\pgf
+sysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+ore.code.tex"
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmath.co
+de.tex"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathcal
+c.code.tex"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathuti
+l.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathpar
+ser.code.tex"
+\pgfmath@dimen=\dimen166
+\pgfmath@count=\count297
+\pgfmath@box=\box51
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.code.tex"
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.basic.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.trigonometric.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.random.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.comparison.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.base.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.round.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.misc.code.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathfun
+ctions.integerarithmetics.code.tex")))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfmathflo
+at.code.tex"
+\c@pgfmathroundto@lastzeros=\count298
+))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/math\pgfint.cod
+e.tex")
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orepoints.code.tex"
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen167
+\pgf@picmaxx=\dimen168
+\pgf@picminy=\dimen169
+\pgf@picmaxy=\dimen170
+\pgf@pathminx=\dimen171
+\pgf@pathmaxx=\dimen172
+\pgf@pathminy=\dimen173
+\pgf@pathmaxy=\dimen174
+\pgf@xx=\dimen175
+\pgf@xy=\dimen176
+\pgf@yx=\dimen177
+\pgf@yy=\dimen178
+\pgf@zx=\dimen179
+\pgf@zy=\dimen180
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen181
+\pgf@path@lasty=\dimen182
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen183
+\pgf@shorten@start@additional=\dimen184
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orescopes.code.tex"
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box52
+\pgf@hbox=\box53
+\pgf@layerbox@main=\box54
+\pgf@picture@serial@count=\count299
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen185
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen186
+\pgf@pt@y=\dimen187
+\pgf@pt@temp=\dimen188
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orequick.code.tex"
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orearrows.code.tex"
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen189
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oreshade.code.tex"
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen190
+\pgf@sys@shading@range@num=\count300
+\pgf@shadingcount=\count301
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oreimage.code.tex"
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box55
+))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orelayers.code.tex"
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+oretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/basiclayer\pgfc
+orerdf.code.tex"
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodu
+leshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box56
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/generic/pgf/modules\pgfmodu
+leplot.code.tex"
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgf
+comp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen191
+\pgf@nodesepend=\dimen192
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/compatibility\pgf
+comp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty"
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks34
+\verbatim@line=\toks35
+\verbatim@in@stream=\read4
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/environ\environ.sty"
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/trimspaces\trimspaces
+.sty"
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks36
+)
+("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty
+"
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count302
+)
+\tcb@titlebox=\box57
+\tcb@upperbox=\box58
+\tcb@lowerbox=\box59
+\tcb@phantombox=\box60
+\c@tcbbreakpart=\count303
+\c@tcblayer=\count304
+\tcolorbox@number=\count305
+\tcb@temp=\box61
+\tcb@temp=\box62
+\tcb@temp=\box63
+\tcb@temp=\box64
+\tcb@out=\write4
+\tcb@record@out=\write5
+) (main.aux (secciones/1-Portada.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (secciones/2-Introduccion.aux))
+ (secciones/2-Introduccion.aux)
+(secciones/3-SceneBuilder.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -413,17 +702,17 @@ LaTeX Info: Redefining \% on input line 25.
 ("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.
 mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen154
-\scratchbox=\box50
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen155
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count306
+\scratchdimen=\dimen193
+\scratchbox=\box65
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen194
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks38
 )
 ("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf
 -base.sty"
@@ -431,8 +720,8 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\AtBeginShipoutBox=\box51
-Package hyperref Info: Link coloring OFF on input line 25.
+\AtBeginShipoutBox=\box66
+Package hyperref Info: Link coloring OFF on input line 28.
 
 ("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -444,20 +733,22 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 itlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count296
+\c@section@level=\count312
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
  (main.out) (main.out)
-\@outlinefile=\write3
-\openout3 = `main.out'.
+\@outlinefile=\write6
+\openout6 = `main.out'.
 
-\c@lstlisting=\count297
+\c@lstlisting=\count313
+ ABD: EveryShipout initializing macros
 \openout2 = `secciones/1-Portada.aux'.
 
- (secciones/1-Portada.tex
-<img/logo-javafx.jpg, id=19, 200.75pt x 186.6975pt>
+
+(secciones/1-Portada.tex
+<img/logo-javafx.jpg, id=46, 200.75pt x 186.6975pt>
 File: img/logo-javafx.jpg Graphic file (type jpg)
 <use img/logo-javafx.jpg>
 Package pdftex.def Info: img/logo-javafx.jpg  used on input line 12.
@@ -466,25 +757,24 @@ Package pdftex.def Info: img/logo-javafx.jpg  used on input line 12.
 
 
 {C:/Users/Yo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/logo-jav
-afx.jpg>])
-(main.toc
+afx.jpg>]) (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 3.
 )
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 	\include{secciones/2-Introduccion}
+l.31 	\include{secciones/2-Introduccion}
                                          [1
 
 
@@ -500,52 +790,175 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
 
 ]) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
- (main.aux (secciones/1-Portada.aux)
+\openout2 = `secciones/3-SceneBuilder.aux'.
+
+ (secciones/3-SceneBuilder.tex
+Parte 1.
+<img/preferences-jdk.png, id=89, 547.2947pt x 278.54062pt>
+File: img/preferences-jdk.png Graphic file (type png)
+<use img/preferences-jdk.png>
+Package pdftex.def Info: img/preferences-jdk.png  used on input line 24.
+(pdftex.def)             Requested size: 391.34613pt x 199.16928pt.
+[4
+
+
+
+]
+<img/preferences-compliance.png, id=98, 547.2947pt x 293.59688pt>
+File: img/preferences-compliance.png Graphic file (type png)
+<use img/preferences-compliance.png>
+Package pdftex.def Info: img/preferences-compliance.png  used on input line 28.
+
+(pdftex.def)             Requested size: 371.27025pt x 199.16928pt.
+<img/preferences-javafx.png, id=99, 655.69969pt x 278.54062pt>
+File: img/preferences-javafx.png Graphic file (type png)
+<use img/preferences-javafx.png>
+Package pdftex.def Info: img/preferences-javafx.png  used on input line 32.
+(pdftex.def)             Requested size: 468.86174pt x 199.16928pt.
+ [5 <./img/preferences-jdk.png> <./img/preferences-compliance.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+<img/project1.png, id=112, 396.7322pt x 377.15906pt>
+File: img/project1.png Graphic file (type png)
+<use img/project1.png>
+Package pdftex.def Info: img/project1.png  used on input line 52.
+(pdftex.def)             Requested size: 227.62204pt x 216.39862pt.
+<img/project2.png, id=113, 399.74344pt x 548.0475pt>
+File: img/project2.png Graphic file (type png)
+<use img/project2.png>
+Package pdftex.def Info: img/project2.png  used on input line 55.
+(pdftex.def)             Requested size: 227.62204pt x 312.07254pt.
+[6 <./img/preferences-javafx.png>] [7 <./img/project1.png> <./img/project2.png>
+]
+<img/fxmlDocument.png, id=132, 397.485pt x 380.17032pt>
+File: img/fxmlDocument.png Graphic file (type png)
+<use img/fxmlDocument.png>
+Package pdftex.def Info: img/fxmlDocument.png  used on input line 74.
+(pdftex.def)             Requested size: 227.62204pt x 217.7145pt.
+<img/fxmlNombreDocument.png, id=133, 396.7322pt x 378.66469pt>
+File: img/fxmlNombreDocument.png Graphic file (type png)
+<use img/fxmlNombreDocument.png>
+Package pdftex.def Info: img/fxmlNombreDocument.png  used on input line 77.
+(pdftex.def)             Requested size: 227.62204pt x 217.26248pt.
+ [8 <./img/fxmlDocument.png>]
+<img/openSceneBuilder.png, id=141, 319.1925pt x 195.73125pt>
+File: img/openSceneBuilder.png Graphic file (type png)
+<use img/openSceneBuilder.png>
+Package pdftex.def Info: img/openSceneBuilder.png  used on input line 91.
+(pdftex.def)             Requested size: 199.16928pt x 122.1316pt.
+<img/anchorPane.png, id=142, 456.20438pt x 340.27126pt>
+File: img/anchorPane.png Graphic file (type png)
+<use img/anchorPane.png>
+Package pdftex.def Info: img/anchorPane.png  used on input line 97.
+(pdftex.def)             Requested size: 312.9803pt x 233.44785pt.
+ [9 <./img/fxmlNombreDocument.png> <./img/openSceneBuilder.png>]
+<img/splitPane.png, id=150, 456.20438pt x 345.54094pt>
+File: img/splitPane.png Graphic file (type png)
+<use img/splitPane.png>
+Package pdftex.def Info: img/splitPane.png  used on input line 101.
+(pdftex.def)             Requested size: 312.9803pt x 237.06319pt.
+<img/TableView.png, id=152, 663.98062pt x 363.60844pt>
+File: img/TableView.png Graphic file (type png)
+<use img/TableView.png>
+Package pdftex.def Info: img/TableView.png  used on input line 106.
+(pdftex.def)             Requested size: 398.33858pt x 218.13899pt.
+ [10 <./img/anchorPane.png> <./img/splitPane.png>]
+<img/nombreApellido.png, id=159, 421.575pt x 258.9675pt>
+File: img/nombreApellido.png Graphic file (type png)
+<use img/nombreApellido.png>
+Package pdftex.def Info: img/nombreApellido.png  used on input line 113.
+(pdftex.def)             Requested size: 284.52756pt x 174.78365pt.
+<img/constraintRezise.png, id=160, 222.8325pt x 292.84406pt>
+File: img/constraintRezise.png Graphic file (type png)
+<use img/constraintRezise.png>
+Package pdftex.def Info: img/constraintRezise.png  used on input line 117.
+(pdftex.def)             Requested size: 199.16928pt x 261.7475pt.
+ [11 <./img/TableView.png> <./img/nombreApellido.png>]
+<img/detallesPersona.png, id=169, 532.23843pt x 184.43906pt>
+File: img/detallesPersona.png Graphic file (type png)
+<use img/detallesPersona.png>
+Package pdftex.def Info: img/detallesPersona.png  used on input line 121.
+(pdftex.def)             Requested size: 369.88582pt x 128.18054pt.
+<img/gridPane.png, id=170, 609.77812pt x 288.3272pt>
+File: img/gridPane.png Graphic file (type png)
+<use img/gridPane.png>
+Package pdftex.def Info: img/gridPane.png  used on input line 125.
+(pdftex.def)             Requested size: 455.24408pt x 215.26376pt.
+ [12 <./img/constraintRezise.png> <./img/detallesPersona.png>]
+<img/gridPaneAddRow.png, id=180, 560.8453pt x 260.47313pt>
+File: img/gridPaneAddRow.png Graphic file (type png)
+<use img/gridPaneAddRow.png>
+Package pdftex.def Info: img/gridPaneAddRow.png  used on input line 130.
+(pdftex.def)             Requested size: 398.33858pt x 184.99683pt.
+<img/hBox.png, id=181, 329.73187pt x 353.06906pt>
+File: img/hBox.png Graphic file (type png)
+<use img/hBox.png>
+Package pdftex.def Info: img/hBox.png  used on input line 134.
+(pdftex.def)             Requested size: 284.52756pt x 304.67323pt.
+<img/hBoxLayout.png, id=182, 432.11438pt x 319.94531pt>
+File: img/hBoxLayout.png Graphic file (type png)
+<use img/hBoxLayout.png>
+Package pdftex.def Info: img/hBoxLayout.png  used on input line 137.
+(pdftex.def)             Requested size: 284.52756pt x 210.67635pt.
+ [13 <./img/gridPane.png> <./img/gridPaneAddRow.png>]
+<img/previewUno.png, id=191, 615.0478pt x 304.88907pt>
+File: img/previewUno.png Graphic file (type png)
+<use img/previewUno.png>
+Package pdftex.def Info: img/previewUno.png  used on input line 141.
+(pdftex.def)             Requested size: 398.33858pt x 197.46375pt.
+
+[14 <./img/hBox.png> <./img/hBoxLayout.png>]
+<img/rootLayout.png, id=199, 393.72093pt x 379.4175pt>
+File: img/rootLayout.png Graphic file (type png)
+<use img/rootLayout.png>
+Package pdftex.def Info: img/rootLayout.png  used on input line 156.
+(pdftex.def)             Requested size: 312.9803pt x 301.60652pt.
+ [15 <./img/previewUno.png>]
+<img/rootLayoutSize.png, id=206, 213.04594pt x 128.73094pt>
+File: img/rootLayoutSize.png Graphic file (type png)
+<use img/rootLayoutSize.png>
+Package pdftex.def Info: img/rootLayoutSize.png  used on input line 161.
+(pdftex.def)             Requested size: 256.0748pt x 154.73953pt.
+<img/menuBarTop.png, id=207, 467.49657pt x 100.12407pt>
+File: img/menuBarTop.png Graphic file (type png)
+<use img/menuBarTop.png>
+Package pdftex.def Info: img/menuBarTop.png  used on input line 165.
+(pdftex.def)             Requested size: 256.0748pt x 54.84534pt.
+)
+[16 <./img/rootLayout.png> <./img/rootLayoutSize.png> <./img/menuBarTop.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+
+(main.aux (secciones/1-Portada.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (secciones/2-Introduccion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 54D3C68DA87E7178F0710E9806960E0E;228
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
+ (secciones/2-Introduccion.aux)
+(secciones/3-SceneBuilder.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 37456B0EE087FD59AA6C34DA639BD920;701.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 9349 strings out of 480932
- 149672 string characters out of 2901309
- 536338 words of memory out of 3000000
- 25036 multiletter control sequences out of 15000+200000
- 537199 words of font info for 40 fonts, out of 3000000 for 9000
+ 18972 strings out of 480932
+ 360121 string characters out of 2901309
+ 717627 words of memory out of 3000000
+ 34392 multiletter control sequences out of 15000+200000
+ 538320 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,37p,552b,407s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.0.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.0.1} has been referenced but does not exist
-, replaced by a fixed one
-
-<C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr17.pfb>
-Output written on main.pdf (4 pages, 63201 bytes).
+ 59i,7n,75p,925b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr17.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Yo/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (17 pages, 594174 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 249 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
