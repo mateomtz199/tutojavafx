@@ -166,3 +166,41 @@ Necesitamos otro archivo FXML para nuestra vista raíz, la cual contendrá una b
 	\end{figure}
 	
 \end{enumerate}
+\section{La clase principal en JavaFX}
+Ahora necesitamos crear la clase java principal, la cual iniciará nuestra aplicación mediante \textcolor{codigo}{\texttt{RootLayout.fxml}} y añadirá la vista \textcolor{codigo}{\texttt{PersonOverview.fxml}} en el centro.
+
+\begin{enumerate}
+	\item Haz clic derecho en el proyecto y elige\textit{ New | Other | JavaFX | classes | JavaFX Main Class}.
+	\begin{figure}[H]
+		\includegraphics[width=11cm]{img/fxMainClass}
+	\end{figure}
+	
+	\item Llama a esta clase \textcolor{codigo}{\texttt{MainApp}} y ponla en el paquete de controladores \textcolor{codigo}{\texttt{ch.makery.address}} (nota: este es el paquete padre de los paquetes \textcolor{codigo}{\texttt{view}} y \textcolor{codigo}{\texttt{model}}).
+	\begin{figure}[H]
+		\includegraphics[width=11cm]{img/MainApp}
+	\end{figure}
+\end{enumerate}
+
+La clase generada (\textcolor{codigo}{\texttt{MainApp.java}}) extiende a la clase \textcolor{codigo}{\texttt{Application}} y contiene dos métodos. Esta es la estructura básica que necesitamos para ejecutar una Aplicación JavaFX. La parte más importante para nosotros es el método \textcolor{codigo}{\texttt{start(Stage primaryStage)}}. Este método es invocado automáticamente cuando la aplicación es lanzada desde el método \textcolor{codigo}{\texttt{main}}.\\
+Como puedes ver, el método \textcolor{codigo}{\texttt{start(...)}} tomo un \textcolor{codigo}{\texttt{Stage}} como parámetro. El gráfico siguiente muestra la estructura de cualquier aplicación JavaFX:
+\begin{figure}[H]
+	\includegraphics[width=8cm]{img/javafx-hierarchy}
+	\caption*{Fuente de la imagen: \textcolor{azul}{\href{http://www.oracle.com}{http://www.oracle.com}}}
+\end{figure}
+
+Es como una obra de teatro: El \textcolor{codigo}{\texttt{Stage}} (escenario) es el contenedor principal, normalmente una ventana con borde y los típicos botones para maximizar, minimizar o cerrar la ventana. Dentro del \textcolor{codigo}{\texttt{Stage}} se puede añadir una \textcolor{codigo}{\texttt{Scene}} (escena), la cual puede cambiarse dinámicamente por otra \textcolor{codigo}{\texttt{Scene}}. Dentro de un \textcolor{codigo}{\texttt{Scene}} se añaden los nodos JavaFX, tales como \textcolor{codigo}{\texttt{AnchorPane}}, \textcolor{codigo}{\texttt{TextBox}}, etc.\\
+Para tener más información puedes consultar \textcolor{azul}{\href{https://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm}{Working with the JavaFX Scene Graph}}.\\
+Abre el archivo \textcolor{codigo}{\texttt{MainApp.java}} y reemplaza todo su código con el código siguiente:
+
+
+\begin{lstlisting}
+// Hello.java
+import javax.swing.JApplet;
+import java.awt.Graphics;
+
+public class Hello extends JApplet {
+	public void paintComponent(Graphics g) {
+		g.drawString("Hello, world!", 65, 95);
+	}    
+}
+\end{lstlisting}

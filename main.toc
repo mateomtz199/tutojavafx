@@ -9,3 +9,4 @@
 \contentsline {section}{\numberline {1.6}Crea el archivo FXML de diseño}{8}{section.1.6}%
 \contentsline {section}{\numberline {1.7}Diseño mediante Scene Builder}{9}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Crea la aplicación principal}{15}{section.1.8}%
+\contentsline {section}{\numberline {1.9}La clase principal en JavaFX}{17}{section.1.9}%
