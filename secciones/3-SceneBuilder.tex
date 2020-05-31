@@ -192,15 +192,91 @@ Es como una obra de teatro: El \textcolor{codigo}{\texttt{Stage}} (escenario) es
 Para tener más información puedes consultar \textcolor{azul}{\href{https://docs.oracle.com/javase/8/javafx/scene-graph-tutorial/scenegraph.htm}{Working with the JavaFX Scene Graph}}.\\
 Abre el archivo \textcolor{codigo}{\texttt{MainApp.java}} y reemplaza todo su código con el código siguiente:
 
+\begin{minted}[
+	linenos,
+	numbersep=5pt,
+	gobble=0,
+	frame=lines,
+	framesep=2mm,
+	breaklines=true,
+]{java}
+package ch.makery.direcciones;
 
-\begin{lstlisting}
-// Hello.java
-import javax.swing.JApplet;
-import java.awt.Graphics;
+import java.io.IOException;
 
-public class Hello extends JApplet {
-	public void paintComponent(Graphics g) {
-		g.drawString("Hello, world!", 65, 95);
-	}    
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+	private Stage primaryStage;
+	private BorderPane rootLayout;
+	
+	@Override
+	public void start(Stage primaryStage) {
+		this.primaryStage = primaryStage;
+		this.primaryStage.setTitle("Directorios App");
+		
+		initRootLayout();
+		showPersonaOverview();
+	}
+	/**
+	* Inicializa el diseño raíz.
+	*/
+	public void initRootLayout(){
+		try{
+			//Carga el diseño raíz del archivo fxml.
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("view/RootLayout.fxml"));
+			rootLayout = (BorderPane) loader.load();
+			//Muestra la escena que contiene el diseño raíz.
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	/**
+	* Muestra la descripción general de la persona dentro del diseño raíz.
+	*/
+	public void showPersonaOverview(){
+		try{
+			//Carga datos de persona
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainApp.class.getResource("view/PersonaOverview.fxml"));
+			AnchorPane personaOverview = (AnchorPane) loader.load();
+			//Carga los datos de la persona en el centro del diseño raíz.
+			rootLayout.setCenter(personaOverview);
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	/**
+	* Retorna el escenario principal
+	* @return
+	*/
+	public Stage getPriStage(){
+		return primaryStage;
+	}
+	public static void main(String[] args) {
+		launch(args);
+	}
 }
-\end{lstlisting}
+
+\end{minted}
+
+Los diferentes comentarios deben darte pistas sobre lo que hace cada parte del código.\\
+Si ejecutas la aplicación ahora, verás algo parecido a la captura de pantalla incluida al principio de este artículo.
+
+\section{Problemas frecuentes}
+Si JavaFX no encuentra un archivo \textcolor{codigo}{\texttt{fxml}} puedes obtener el siguiente mensaje de error:\\
+\textcolor{codigo}{\texttt{java.lang.IllegalStateException: Location is not set.}}\\
+Para resolverlo comprueba otra vez que no hayas escrito mal el nombre de tus archivos \textcolor{codigo}{\texttt{fxml}}.
+
+\begin{tcolorbox}[leftrule=3mm]
+	Si todavía no te funciona, descárgate el código de esta parte del tutorial y pruébalo con el fxml proporcionado.
+\end{tcolorbox}

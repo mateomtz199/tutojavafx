@@ -1,0 +1,68 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{ch.makery.direcciones}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{java.io.IOException}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.application.Application}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.fxml.FXMLLoader}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.Scene}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.layout.AnchorPane}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.layout.BorderPane}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.stage.Stage}\PYG{p}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{MainApp} \PYG{k+kd}{extends} \PYG{n}{Application} \PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{private} \PYG{n}{Stage} \PYG{n}{primaryStage}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{BorderPane} \PYG{n}{rootLayout}\PYG{p}{;}
+	
+	\PYG{n+nd}{@Override}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{start}\PYG{p}{(}\PYG{n}{Stage} \PYG{n}{primaryStage}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{primaryStage} \PYG{o}{=} \PYG{n}{primaryStage}\PYG{p}{;}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{primaryStage}\PYG{p}{.}\PYG{n+na}{setTitle}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Directorios App\PYGZdq{}}\PYG{p}{);}
+		
+		\PYG{n}{initRootLayout}\PYG{p}{();}
+		\PYG{n}{showPersonaOverview}\PYG{p}{();}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Inicializa el diseño raíz.}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{initRootLayout}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{try}\PYG{p}{\PYGZob{}}
+			\PYG{c+c1}{//Carga el diseño raíz del archivo fxml.}
+			\PYG{n}{FXMLLoader} \PYG{n}{loader} \PYG{o}{=} \PYG{k}{new} \PYG{n}{FXMLLoader}\PYG{p}{();}
+			\PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{setLocation}\PYG{p}{(}\PYG{n}{MainApp}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{.}\PYG{n+na}{getResource}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}view/RootLayout.fxml\PYGZdq{}}\PYG{p}{));}
+			\PYG{n}{rootLayout} \PYG{o}{=} \PYG{p}{(}\PYG{n}{BorderPane}\PYG{p}{)} \PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{load}\PYG{p}{();}
+			\PYG{c+c1}{//Muestra la escena que contiene el diseño raíz.}
+			\PYG{n}{Scene} \PYG{n}{scene} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Scene}\PYG{p}{(}\PYG{n}{rootLayout}\PYG{p}{);}
+			\PYG{n}{primaryStage}\PYG{p}{.}\PYG{n+na}{setScene}\PYG{p}{(}\PYG{n}{scene}\PYG{p}{);}
+			\PYG{n}{primaryStage}\PYG{p}{.}\PYG{n+na}{show}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}\PYG{k}{catch} \PYG{p}{(}\PYG{n}{IOException} \PYG{n}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{e}\PYG{p}{.}\PYG{n+na}{printStackTrace}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Muestra la descripción general de la persona dentro del diseño raíz.}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{showPersonaOverview}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{try}\PYG{p}{\PYGZob{}}
+			\PYG{c+c1}{//Carga datos de persona}
+			\PYG{n}{FXMLLoader} \PYG{n}{loader} \PYG{o}{=} \PYG{k}{new} \PYG{n}{FXMLLoader}\PYG{p}{();}
+			\PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{setLocation}\PYG{p}{(}\PYG{n}{MainApp}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{.}\PYG{n+na}{getResource}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}view/PersonaOverview.fxml\PYGZdq{}}\PYG{p}{));}
+			\PYG{n}{AnchorPane} \PYG{n}{personaOverview} \PYG{o}{=} \PYG{p}{(}\PYG{n}{AnchorPane}\PYG{p}{)} \PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{load}\PYG{p}{();}
+			\PYG{c+c1}{//Carga los datos de la persona en el centro del diseño raíz.}
+			\PYG{n}{rootLayout}\PYG{p}{.}\PYG{n+na}{setCenter}\PYG{p}{(}\PYG{n}{personaOverview}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}\PYG{k}{catch} \PYG{p}{(}\PYG{n}{IOException} \PYG{n}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{e}\PYG{p}{.}\PYG{n+na}{printStackTrace}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Retorna el escenario principal}
+\PYG{c+cm}{	* @return}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{n}{Stage} \PYG{n+nf}{getPriStage}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{primaryStage}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{void} \PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]} \PYG{n}{args}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{n}{launch}\PYG{p}{(}\PYG{n}{args}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
