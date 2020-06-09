@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Lista de personas en una ObservableList}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{private} \PYG{n}{ObservableList}\PYG{o}{\PYGZlt{}}\PYG{n}{Persona}\PYG{o}{\PYGZgt{}} \PYG{n}{personData} \PYG{o}{=} \PYG{n}{FXCollections}\PYG{p}{.}\PYG{n+na}{observableArrayList}\PYG{p}{();}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Constructor}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{n+nf}{MainApp}\PYG{p}{()\PYGZob{}}
+		\PYG{c+c1}{//Agregar algunas personas a la lista}
+		\PYG{n}{personData}\PYG{p}{.}\PYG{n+na}{add}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Persona}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Juan\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Perez\PYGZdq{}}\PYG{p}{));}
+		\PYG{n}{personData}\PYG{p}{.}\PYG{n+na}{add}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Persona}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Pedro\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Perez\PYGZdq{}}\PYG{p}{));}
+		\PYG{n}{personData}\PYG{p}{.}\PYG{n+na}{add}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Persona}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Pablo\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Perez\PYGZdq{}}\PYG{p}{));}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Devuelve los datos como una lista observable de personas.}
+\PYG{c+cm}{	* @return}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{n}{ObservableList}\PYG{o}{\PYGZlt{}}\PYG{n}{Persona}\PYG{o}{\PYGZgt{}} \PYG{n+nf}{getPersonData}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{personData}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,59 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{ch.makery.direcciones.view}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{ch.makery.direcciones.MainApp}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{ch.makery.direcciones.model.Persona}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.fxml.FXML}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.Label}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.TableColumn}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.TableView}\PYG{p}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{PersonOverviewController} \PYG{p}{\PYGZob{}}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TableView}\PYG{o}{\PYGZlt{}}\PYG{n}{Persona}\PYG{o}{\PYGZgt{}} \PYG{n}{personTable}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TableColumn}\PYG{o}{\PYGZlt{}}\PYG{n}{Persona}\PYG{p}{,} \PYG{n}{String}\PYG{o}{\PYGZgt{}} \PYG{n}{nombresColumna}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TableColumn}\PYG{o}{\PYGZlt{}}\PYG{n}{Persona}\PYG{p}{,} \PYG{n}{String}\PYG{o}{\PYGZgt{}} \PYG{n}{apellidosColumna}\PYG{p}{;}
+	
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{nombreLabel}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{apelidoLabel}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{calleLabel}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{codigoPostaLabel}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{ciudadLabel}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{Label} \PYG{n}{onomasticoLabel}\PYG{p}{;}
+	
+	\PYG{c+c1}{//Referencia a la clase MainApp}
+	\PYG{k+kd}{private} \PYG{n}{MainApp} \PYG{n}{mainApp}\PYG{p}{;}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Constructor}
+\PYG{c+cm}{	* Se llama al constructor antes del método initialize()}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{n+nf}{PersonOverviewController}\PYG{p}{()\PYGZob{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Inicializa la clase de controlador}
+\PYG{c+cm}{	* Este método se llama automáticamente después de cargar el archivo fxml.}
+\PYG{c+cm}{	*/}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{initialize}\PYG{p}{()\PYGZob{}}
+		\PYG{c+c1}{//Inicialice la tabla de personas con las dos columnas.}
+		\PYG{n}{nombresColumna}\PYG{p}{.}\PYG{n+na}{setCellValueFactory}\PYG{p}{(}\PYG{n}{cellData} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{cellData}\PYG{p}{.}\PYG{n+na}{getValue}\PYG{p}{().}\PYG{n+na}{getNombre}\PYG{p}{());}
+		\PYG{n}{apellidosColumna}\PYG{p}{.}\PYG{n+na}{setCellValueFactory}\PYG{p}{(}\PYG{n}{cellData} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{cellData}\PYG{p}{.}\PYG{n+na}{getValue}\PYG{p}{().}\PYG{n+na}{getApellido}\PYG{p}{());}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Es llamado por la aplicación principal para devolverse una referencia a sí mismo.}
+\PYG{c+cm}{	* @param mainApp}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setMainApp}\PYG{p}{(}\PYG{n}{MainApp} \PYG{n}{mainApp}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{mainApp} \PYG{o}{=} \PYG{n}{mainApp}\PYG{p}{;}
+		\PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{setItems}\PYG{p}{(}\PYG{n}{mainApp}\PYG{p}{.}\PYG{n+na}{getPersonData}\PYG{p}{());}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

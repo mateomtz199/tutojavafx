@@ -11,3 +11,13 @@
 \contentsline {section}{\numberline {1.8}Crea la aplicación principal}{15}{section.1.8}%
 \contentsline {section}{\numberline {1.9}La clase principal en JavaFX}{17}{section.1.9}%
 \contentsline {section}{\numberline {1.10}Problemas frecuentes}{20}{section.1.10}%
+\contentsline {chapter}{\numberline {2}Modelo y TableView}{22}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Contenidos en Parte 2}{22}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Crea la clase para el Modelo}{22}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Explicación del código}{24}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Una lista de personas}{25}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Lista observable (ObservableList)}{25}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}PersonOverviewController}{26}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Conexión de MainApp con PersonOverviewController}{28}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Vincular la vista al controlador}{28}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Inicia la aplicación}{30}{section.2.6}%

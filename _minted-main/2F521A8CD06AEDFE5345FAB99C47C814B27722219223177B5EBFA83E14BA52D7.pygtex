@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	* Muestra la descripción general de la persona dentro del diseño raíz.}
+\PYG{c+cm}{	*/}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{showPersonaOverview}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{try}\PYG{p}{\PYGZob{}}
+			\PYG{c+c1}{//Carga datos de persona}
+			\PYG{n}{FXMLLoader} \PYG{n}{loader} \PYG{o}{=} \PYG{k}{new} \PYG{n}{FXMLLoader}\PYG{p}{();}
+			\PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{setLocation}\PYG{p}{(}\PYG{n}{MainApp}\PYG{p}{.}\PYG{n+na}{class}\PYG{p}{.}\PYG{n+na}{getResource}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}view/PersonaOverview.fxml\PYGZdq{}}\PYG{p}{));}
+			\PYG{n}{AnchorPane} \PYG{n}{personaOverview} \PYG{o}{=} \PYG{p}{(}\PYG{n}{AnchorPane}\PYG{p}{)} \PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{load}\PYG{p}{();}
+			
+			\PYG{c+c1}{//Carga los datos de la persona en el centro del diseño raíz.}
+			\PYG{n}{rootLayout}\PYG{p}{.}\PYG{n+na}{setCenter}\PYG{p}{(}\PYG{n}{personaOverview}\PYG{p}{);}
+			
+			\PYG{c+c1}{//Darle al controlador acceso a la App \PYGZhy{} lineas adicionales}
+			\PYG{n}{PersonOverviewController} \PYG{n}{controller} \PYG{o}{=} \PYG{n}{loader}\PYG{p}{.}\PYG{n+na}{getController}\PYG{p}{();}
+			\PYG{n}{controller}\PYG{p}{.}\PYG{n+na}{setMainApp}\PYG{p}{(}\PYG{k}{this}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}\PYG{k}{catch} \PYG{p}{(}\PYG{n}{IOException} \PYG{n}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+			\PYG{n}{e}\PYG{p}{.}\PYG{n+na}{printStackTrace}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

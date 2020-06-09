@@ -1,0 +1,72 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{ch.makery.direcciones.model}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{java.time.LocalDate}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.IntegerProperty}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.ObjectProperty}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.SimpleIntegerProperty}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.SimpleObjectProperty}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.SimpleStringProperty}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.beans.property.StringProperty}\PYG{p}{;}
+
+\PYG{c+cm}{/**}
+\PYG{c+cm}{* Modelo de la clase persona}
+\PYG{c+cm}{* @author Mateo Mtz}
+\PYG{c+cm}{*}
+\PYG{c+cm}{*/}
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Persona} \PYG{p}{\PYGZob{}}
+	\PYG{k+kd}{private} \PYG{n}{StringProperty} \PYG{n}{nombre}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{StringProperty} \PYG{n}{apellido}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{StringProperty} \PYG{n}{calle}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{IntegerProperty} \PYG{n}{codigoPostal}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{StringProperty} \PYG{n}{ciudad}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{ObjectProperty}\PYG{o}{\PYGZlt{}}\PYG{n}{LocalDate}\PYG{o}{\PYGZgt{}} \PYG{n}{onomastico}\PYG{p}{;}
+	\PYG{k+kd}{public} \PYG{n+nf}{Persona}\PYG{p}{(}\PYG{n}{String} \PYG{n}{nombre}\PYG{p}{,} \PYG{n}{String} \PYG{n}{apellido}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{nombre} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{nombre}\PYG{p}{);}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{apellido} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{apellido}\PYG{p}{);}
+		
+		\PYG{c+c1}{//}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{calle} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Alguna calle\PYGZdq{}}\PYG{p}{);}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{codigoPostal} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleIntegerProperty}\PYG{p}{(}\PYG{l+m+mi}{1234}\PYG{p}{);}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{ciudad} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Alguna ciudad\PYGZdq{}}\PYG{p}{);}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{onomastico} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleObjectProperty}\PYG{o}{\PYGZlt{}}\PYG{n}{LocalDate}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{LocalDate}\PYG{p}{.}\PYG{n+na}{of}\PYG{p}{(}\PYG{l+m+mi}{1999}\PYG{p}{,}  \PYG{l+m+mi}{2}\PYG{p}{,}  \PYG{l+m+mi}{21}\PYG{p}{));}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{StringProperty} \PYG{n+nf}{getNombre}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{nombre}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setNombre}\PYG{p}{(}\PYG{n}{String} \PYG{n}{nombre}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{nombre} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{nombre}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{StringProperty} \PYG{n+nf}{getApellido}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{apellido}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setApellido}\PYG{p}{(}\PYG{n}{String} \PYG{n}{apellido}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{apellido} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{apellido}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{StringProperty} \PYG{n+nf}{getCalle}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{calle}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setCalle}\PYG{p}{(}\PYG{n}{String} \PYG{n}{calle}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{calle} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{calle}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{IntegerProperty} \PYG{n+nf}{getCodigoPostal}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{codigoPostal}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setCodigoPostal}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{codigoPostal}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{codigoPostal} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleIntegerProperty}\PYG{p}{(}\PYG{n}{codigoPostal}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{StringProperty} \PYG{n+nf}{getCiudad}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{ciudad}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setCiudad}\PYG{p}{(}\PYG{n}{String} \PYG{n}{ciudad}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{ciudad} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleStringProperty}\PYG{p}{(}\PYG{n}{ciudad}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{n}{ObjectProperty}\PYG{o}{\PYGZlt{}}\PYG{n}{LocalDate}\PYG{o}{\PYGZgt{}} \PYG{n+nf}{getOnomastico}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{onomastico}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setOnomastico}\PYG{p}{(}\PYG{n}{LocalDate} \PYG{n}{onomastico}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{onomastico} \PYG{o}{=} \PYG{k}{new} \PYG{n}{SimpleObjectProperty}\PYG{o}{\PYGZlt{}}\PYG{n}{LocalDate}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{n}{onomastico}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

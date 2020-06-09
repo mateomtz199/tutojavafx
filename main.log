@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.25)  30 MAY 2020 19:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7380 64-bit) (preloaded format=pdflatex 2020.3.25)  9 JUN 2020 13:16
 entering extended mode
 **./main.tex
 (main.tex
@@ -839,33 +839,33 @@ runsystem(del main.aex)...executed.
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
  (secciones/2-Introduccion.aux)
-(secciones/3-SceneBuilder.aux))
+(secciones/3-SceneBuilder.aux) (secciones/4-Modelo.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 5
-2.
+8.
 
 ("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -924,7 +924,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
 \AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 58.
 
 ("C:\Users\Yo\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -938,9 +938,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count345
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
  (main.out) (main.out)
 \@outlinefile=\write8
 \openout8 = `main.out'.
@@ -953,7 +953,7 @@ Package caption Info: End \AtBeginDocument code.
 
 
 (secciones/1-Portada.tex
-<img/logo-javafx.jpg, id=50, 200.75pt x 186.6975pt>
+<img/logo-javafx.jpg, id=94, 200.75pt x 186.6975pt>
 File: img/logo-javafx.jpg Graphic file (type jpg)
 <use img/logo-javafx.jpg>
 Package pdftex.def Info: img/logo-javafx.jpg  used on input line 12.
@@ -997,7 +997,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.55 	\include{secciones/2-Introduccion}
+l.61 	\include{secciones/2-Introduccion}
                                          [1
 
 
@@ -1022,7 +1022,7 @@ File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
  (secciones/3-SceneBuilder.tex
 Parte 1.
-<img/preferences-jdk.png, id=95, 547.2947pt x 278.54062pt>
+<img/preferences-jdk.png, id=150, 547.2947pt x 278.54062pt>
 File: img/preferences-jdk.png Graphic file (type png)
 <use img/preferences-jdk.png>
 Package pdftex.def Info: img/preferences-jdk.png  used on input line 24.
@@ -1032,13 +1032,13 @@ Package pdftex.def Info: img/preferences-jdk.png  used on input line 24.
 
 
 ]
-<img/preferences-compliance.png, id=104, 547.2947pt x 293.59688pt>
+<img/preferences-compliance.png, id=159, 547.2947pt x 293.59688pt>
 File: img/preferences-compliance.png Graphic file (type png)
 <use img/preferences-compliance.png>
 Package pdftex.def Info: img/preferences-compliance.png  used on input line 28.
 
 (pdftex.def)             Requested size: 371.27025pt x 199.16928pt.
-<img/preferences-javafx.png, id=105, 655.69969pt x 278.54062pt>
+<img/preferences-javafx.png, id=160, 655.69969pt x 278.54062pt>
 File: img/preferences-javafx.png Graphic file (type png)
 <use img/preferences-javafx.png>
 Package pdftex.def Info: img/preferences-javafx.png  used on input line 32.
@@ -1048,127 +1048,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-<img/project1.png, id=120, 396.7322pt x 377.15906pt>
+<img/project1.png, id=175, 396.7322pt x 377.15906pt>
 File: img/project1.png Graphic file (type png)
 <use img/project1.png>
 Package pdftex.def Info: img/project1.png  used on input line 52.
 (pdftex.def)             Requested size: 227.62204pt x 216.39862pt.
-<img/project2.png, id=121, 399.74344pt x 548.0475pt>
+<img/project2.png, id=176, 399.74344pt x 548.0475pt>
 File: img/project2.png Graphic file (type png)
 <use img/project2.png>
 Package pdftex.def Info: img/project2.png  used on input line 55.
 (pdftex.def)             Requested size: 227.62204pt x 312.07254pt.
 [6 <./img/preferences-javafx.png>] [7 <./img/project1.png> <./img/project2.png>
 ]
-<img/fxmlDocument.png, id=143, 397.485pt x 380.17032pt>
+<img/fxmlDocument.png, id=198, 397.485pt x 380.17032pt>
 File: img/fxmlDocument.png Graphic file (type png)
 <use img/fxmlDocument.png>
 Package pdftex.def Info: img/fxmlDocument.png  used on input line 74.
 (pdftex.def)             Requested size: 227.62204pt x 217.7145pt.
-<img/fxmlNombreDocument.png, id=144, 396.7322pt x 378.66469pt>
+<img/fxmlNombreDocument.png, id=199, 396.7322pt x 378.66469pt>
 File: img/fxmlNombreDocument.png Graphic file (type png)
 <use img/fxmlNombreDocument.png>
 Package pdftex.def Info: img/fxmlNombreDocument.png  used on input line 77.
 (pdftex.def)             Requested size: 227.62204pt x 217.26248pt.
  [8 <./img/fxmlDocument.png>]
-<img/openSceneBuilder.png, id=153, 319.1925pt x 195.73125pt>
+<img/openSceneBuilder.png, id=208, 319.1925pt x 195.73125pt>
 File: img/openSceneBuilder.png Graphic file (type png)
 <use img/openSceneBuilder.png>
 Package pdftex.def Info: img/openSceneBuilder.png  used on input line 91.
 (pdftex.def)             Requested size: 199.16928pt x 122.1316pt.
-<img/anchorPane.png, id=154, 456.20438pt x 340.27126pt>
+<img/anchorPane.png, id=209, 456.20438pt x 340.27126pt>
 File: img/anchorPane.png Graphic file (type png)
 <use img/anchorPane.png>
 Package pdftex.def Info: img/anchorPane.png  used on input line 97.
 (pdftex.def)             Requested size: 312.9803pt x 233.44785pt.
  [9 <./img/fxmlNombreDocument.png> <./img/openSceneBuilder.png>]
-<img/splitPane.png, id=164, 456.20438pt x 345.54094pt>
+<img/splitPane.png, id=219, 456.20438pt x 345.54094pt>
 File: img/splitPane.png Graphic file (type png)
 <use img/splitPane.png>
 Package pdftex.def Info: img/splitPane.png  used on input line 101.
 (pdftex.def)             Requested size: 312.9803pt x 237.06319pt.
-<img/TableView.png, id=166, 663.98062pt x 363.60844pt>
+<img/TableView.png, id=221, 663.98062pt x 363.60844pt>
 File: img/TableView.png Graphic file (type png)
 <use img/TableView.png>
 Package pdftex.def Info: img/TableView.png  used on input line 106.
 (pdftex.def)             Requested size: 398.33858pt x 218.13899pt.
  [10 <./img/anchorPane.png> <./img/splitPane.png>]
-<img/nombreApellido.png, id=175, 421.575pt x 258.9675pt>
+<img/nombreApellido.png, id=230, 421.575pt x 258.9675pt>
 File: img/nombreApellido.png Graphic file (type png)
 <use img/nombreApellido.png>
 Package pdftex.def Info: img/nombreApellido.png  used on input line 113.
 (pdftex.def)             Requested size: 284.52756pt x 174.78365pt.
-<img/constraintRezise.png, id=176, 222.8325pt x 292.84406pt>
+<img/constraintRezise.png, id=231, 222.8325pt x 292.84406pt>
 File: img/constraintRezise.png Graphic file (type png)
 <use img/constraintRezise.png>
 Package pdftex.def Info: img/constraintRezise.png  used on input line 117.
 (pdftex.def)             Requested size: 199.16928pt x 261.7475pt.
  [11 <./img/TableView.png> <./img/nombreApellido.png>]
-<img/detallesPersona.png, id=187, 532.23843pt x 184.43906pt>
+<img/detallesPersona.png, id=242, 532.23843pt x 184.43906pt>
 File: img/detallesPersona.png Graphic file (type png)
 <use img/detallesPersona.png>
 Package pdftex.def Info: img/detallesPersona.png  used on input line 121.
 (pdftex.def)             Requested size: 369.88582pt x 128.18054pt.
-<img/gridPane.png, id=188, 609.77812pt x 288.3272pt>
+<img/gridPane.png, id=243, 609.77812pt x 288.3272pt>
 File: img/gridPane.png Graphic file (type png)
 <use img/gridPane.png>
 Package pdftex.def Info: img/gridPane.png  used on input line 125.
 (pdftex.def)             Requested size: 455.24408pt x 215.26376pt.
  [12 <./img/constraintRezise.png> <./img/detallesPersona.png>]
-<img/gridPaneAddRow.png, id=200, 560.8453pt x 260.47313pt>
+<img/gridPaneAddRow.png, id=255, 560.8453pt x 260.47313pt>
 File: img/gridPaneAddRow.png Graphic file (type png)
 <use img/gridPaneAddRow.png>
 Package pdftex.def Info: img/gridPaneAddRow.png  used on input line 130.
 (pdftex.def)             Requested size: 398.33858pt x 184.99683pt.
-<img/hBox.png, id=201, 329.73187pt x 353.06906pt>
+<img/hBox.png, id=256, 329.73187pt x 353.06906pt>
 File: img/hBox.png Graphic file (type png)
 <use img/hBox.png>
 Package pdftex.def Info: img/hBox.png  used on input line 134.
 (pdftex.def)             Requested size: 284.52756pt x 304.67323pt.
-<img/hBoxLayout.png, id=202, 432.11438pt x 319.94531pt>
+<img/hBoxLayout.png, id=257, 432.11438pt x 319.94531pt>
 File: img/hBoxLayout.png Graphic file (type png)
 <use img/hBoxLayout.png>
 Package pdftex.def Info: img/hBoxLayout.png  used on input line 137.
 (pdftex.def)             Requested size: 284.52756pt x 210.67635pt.
  [13 <./img/gridPane.png> <./img/gridPaneAddRow.png>]
-<img/previewUno.png, id=213, 615.0478pt x 304.88907pt>
+<img/previewUno.png, id=268, 615.0478pt x 304.88907pt>
 File: img/previewUno.png Graphic file (type png)
 <use img/previewUno.png>
 Package pdftex.def Info: img/previewUno.png  used on input line 141.
 (pdftex.def)             Requested size: 398.33858pt x 197.46375pt.
 
 [14 <./img/hBox.png> <./img/hBoxLayout.png>]
-<img/rootLayout.png, id=223, 393.72093pt x 379.4175pt>
+<img/rootLayout.png, id=278, 393.72093pt x 379.4175pt>
 File: img/rootLayout.png Graphic file (type png)
 <use img/rootLayout.png>
 Package pdftex.def Info: img/rootLayout.png  used on input line 156.
 (pdftex.def)             Requested size: 312.9803pt x 301.60652pt.
  [15 <./img/previewUno.png>]
-<img/rootLayoutSize.png, id=231, 213.04594pt x 128.73094pt>
+<img/rootLayoutSize.png, id=286, 213.04594pt x 128.73094pt>
 File: img/rootLayoutSize.png Graphic file (type png)
 <use img/rootLayoutSize.png>
 Package pdftex.def Info: img/rootLayoutSize.png  used on input line 161.
 (pdftex.def)             Requested size: 256.0748pt x 154.73953pt.
-<img/menuBarTop.png, id=232, 467.49657pt x 100.12407pt>
+<img/menuBarTop.png, id=287, 467.49657pt x 100.12407pt>
 File: img/menuBarTop.png Graphic file (type png)
 <use img/menuBarTop.png>
 Package pdftex.def Info: img/menuBarTop.png  used on input line 165.
 (pdftex.def)             Requested size: 256.0748pt x 54.84534pt.
 
 [16 <./img/rootLayout.png> <./img/rootLayoutSize.png> <./img/menuBarTop.png>]
-<img/fxMainClass.png, id=245, 398.23781pt x 378.66469pt>
+<img/fxMainClass.png, id=300, 398.23781pt x 378.66469pt>
 File: img/fxMainClass.png Graphic file (type png)
 <use img/fxMainClass.png>
 Package pdftex.def Info: img/fxMainClass.png  used on input line 175.
 (pdftex.def)             Requested size: 312.9803pt x 297.61066pt.
-<img/MainApp.png, id=246, 397.485pt x 378.66469pt>
+<img/MainApp.png, id=301, 397.485pt x 378.66469pt>
 File: img/MainApp.png Graphic file (type png)
 <use img/MainApp.png>
 Package pdftex.def Info: img/MainApp.png  used on input line 180.
 (pdftex.def)             Requested size: 312.9803pt x 298.17113pt.
 
 [17 <./img/fxMainClass.png>]
-<img/javafx-hierarchy.png, id=255, 419.5675pt x 333.245pt>
+<img/javafx-hierarchy.png, id=310, 419.5675pt x 333.245pt>
 File: img/javafx-hierarchy.png Graphic file (type png)
 <use img/javafx-hierarchy.png>
 Package pdftex.def Info: img/javafx-hierarchy.png  used on input line 187.
@@ -1197,32 +1197,106 @@ ource[]([]"view/PersonaOverview.fxml"[]));|
  []
 
 )) [20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 57.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 57.
+\openout2 = `secciones/4-Modelo.aux'.
+
+ (secciones/4-Modelo.tex
+Parte 2.
+<img/terceraParte.png, id=340, 464.4853pt x 331.2375pt>
+File: img/terceraParte.png Graphic file (type png)
+<use img/terceraParte.png>
+Package pdftex.def Info: img/terceraParte.png  used on input line 3.
+(pdftex.def)             Requested size: 341.43306pt x 243.48949pt.
+\openout6 = `main.pyg'.
+
+
+(_minted-main/06617E7BE4EE9BDDE7848A05FF899245B27722219223177B5EBFA83E14BA52D7.
+pygtex
+Overfull \hbox (65.32732pt too wide) in paragraph at lines 13--1
+\OT1/lmr/m/n/12 da. A~nade una nue-va cla-se al pa-que-te en-car-ga-do de con-t
+e-ner los mo-de-los ([]\OT1/lmtt/m/n/12 ch.makery.direcciones.model[]
+ []
+
+[22
+
+
+
+ <./img/terceraParte.png>] [23]) [24]
+\openout6 = `main.pyg'.
+
+
+(_minted-main/15AB5889AAB6130CA23B72B3EAB882CEB27722219223177B5EBFA83E14BA52D7.
+pygtex) [25]
+Overfull \hbox (45.62628pt too wide) in paragraph at lines 143--144
+[]\OT1/lmr/m/n/12 Crea una cla-se nor-mal den-tro del pa-que-te \OT1/lmr/bx/n/1
+2 view \OT1/lmr/m/n/12 de-no-mi-na-do []\OT1/lmtt/m/n/12 PersonOverviewControll
+er.java[]\OT1/lmr/m/n/12 .
+ []
+
+\openout6 = `main.pyg'.
+
+
+(_minted-main/B864C40EFD1F8F214891C2298360CD9AB27722219223177B5EBFA83E14BA52D7.
+pygtex [26]) [27]
+\openout6 = `main.pyg'.
+
+
+(_minted-main/2F521A8CD06AEDFE5345FAB99C47C814B27722219223177B5EBFA83E14BA52D7.
+pygtex
+Overfull \hbox (141.56992pt too wide) in paragraph at lines 9--9
+| | | |[][][]\OT1/lmtt/m/n/12 loader.[]setLocation[](MainApp.[]class[].[]getRes
+ource[]([]"view/PersonaOverview.fxml"[]));|  
+ []
+
+) [28]
+<img/selectController.png, id=378, 392.21532pt x 137.01187pt>
+File: img/selectController.png Graphic file (type png)
+<use img/selectController.png>
+Package pdftex.def Info: img/selectController.png  used on input line 264.
+(pdftex.def)             Requested size: 227.62204pt x 79.51501pt.
+
+Overfull \hbox (5.41197pt too wide) in paragraph at lines 262--265
+[]\OT1/lmr/m/n/12 Abre la sec-cion \OT1/lmr/m/it/12 Con-tro-ller \OT1/lmr/m/n/
+12 en el la-do iz-quier-do y se-lec-cio-na  []\OT1/lmtt/m/n/12 PersonOverviewCo
+ntroller[]
+ []
+
+<img/personTable.png, id=379, 214.55156pt x 133.24782pt>
+File: img/personTable.png Graphic file (type png)
+<use img/personTable.png>
+Package pdftex.def Info: img/personTable.png  used on input line 268.
+(pdftex.def)             Requested size: 227.62204pt x 141.36603pt.
+<img/nombreLabel.png, id=380, 535.2497pt x 158.84344pt>
+File: img/nombreLabel.png Graphic file (type png)
+<use img/nombreLabel.png>
+Package pdftex.def Info: img/nombreLabel.png  used on input line 273.
+(pdftex.def)             Requested size: 341.43306pt x 101.32982pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+[29 <./img/selectController.png> <./img/personTable.png> <./img/nombreLabel.png
+>]) [30]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
  (main.aux (secciones/1-Portada.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (secciones/2-Introduccion.aux) (secciones/3-SceneBuilder.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 57.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 57.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: E07AFB8CA896F971D50E37F46D3940C5;776
-(rerunfilecheck)             After:  EC3ADFD4359352DABE03E1E24152216B;844.
+ (secciones/2-Introduccion.aux)
+(secciones/3-SceneBuilder.aux) (secciones/4-Modelo.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 0FADCF73C107142EF74295EFD748E675;1605.
 runsystem(del main.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 57.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 23420 strings out of 480932
- 450977 string characters out of 2901309
- 848276 words of memory out of 3000000
- 38686 multiletter control sequences out of 15000+200000
+ 23532 strings out of 480932
+ 454303 string characters out of 2901309
+ 849567 words of memory out of 3000000
+ 38744 multiletter control sequences out of 15000+200000
  579271 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,8n,81p,925b,693s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1241,9 +1315,9 @@ nc}{C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}
 b><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.p
 fb><C:/Users/Yo/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10
 .pfb>
-Output written on main.pdf (22 pages, 853271 bytes).
+Output written on main.pdf (31 pages, 942845 bytes).
 PDF statistics:
- 344 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 123 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

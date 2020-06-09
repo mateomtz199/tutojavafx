@@ -10,3 +10,13 @@
 \BOOKMARK [1][-]{section.1.8}{Crea la aplicaci\363n principal}{chapter.1}% 10
 \BOOKMARK [1][-]{section.1.9}{La clase principal en JavaFX}{chapter.1}% 11
 \BOOKMARK [1][-]{section.1.10}{Problemas frecuentes}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Modelo y TableView}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Contenidos en Parte 2}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{Crea la clase para el Modelo}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Explicaci\363n del c\363digo}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{Una lista de personas}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Lista observable \(ObservableList\)}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{PersonOverviewController}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Conexi\363n de MainApp con PersonOverviewController}{section.2.4}% 20
+\BOOKMARK [1][-]{section.2.5}{Vincular la vista al controlador}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.6}{Inicia la aplicaci\363n}{chapter.2}% 22
