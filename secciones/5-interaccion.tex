@@ -43,8 +43,8 @@ establecerá el texto con detalles de la persona usando \codigo{setText(...)}. S
            codigoPostaLabel.setText(persona.getCodigoPostal().get() + "");
            ciudadLabel.setText(persona.getCiudad().get());
            //¡Necesitamos una forma de convertir el cumpleaños en una Cadena!
-           //onomasticoLabel.setText(...);
-           onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
+           onomasticoLabel.setText(...);
+           // onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
        }else {
            //Si la persona es nula, quitar todo el texto
            nombreLabel.setText("");
@@ -134,3 +134,100 @@ Llamaremos a esta clase \codigo{DateUtil} y la ubicaremos una paquete separado d
     }
 
 \end{minted}
+
+\subsection{Utilización de la clase DateUtil}
+Ahora necesitamos utilizar la nueva clase \codigo{DateUtil} en el método \codigo{showPersonDetails} de 
+\codigo{PersonaOverviewController}. Sustituye el TODO que habíamos añadido con la línea siguiente:
+
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+    breaklines=true,
+    ]{java}
+    onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
+\end{minted}
+
+\section{Detecta cambios de selección en la tabla}
+Para enterarse de que el usuario ha seleccionado a un persona en la tabla de contactos, 
+necesitamos escuchar los cambios. Esto se consigue mediante la implementación de un interface de JavaFX 
+que se llama \codigo{ChangeListener} con un método llamado \codigo{changed(...)}. Este método solo tiene tres 
+parámetros: \codigo{observable}, \codigo{oldValue}, y \codigo{newValue}. \\
+En Java 8 la forma más elegante de implementar una interfaz con un único método es mediante una \textit{lambda expression}. 
+Añadiremos algunas líneas al método \codigo{initialize()} de \codigo{PersonaOverviewController}. 
+El código resultante se asemejará al siguiente:\\
+\codigo{PersonOverviewController.java}
+
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+    breaklines=true,
+    ]{java}
+    /**
+	 * Inicializa la clase de controlador
+	 * Este método se llama automáticamente después de cargar el archivo fxml.
+	 */
+	@FXML
+	private void initialize(){
+		//Inicialice la tabla de personas con las dos columnas.
+		nombresColumna.setCellValueFactory(cellData -> cellData.getValue().getNombre());
+		apellidosColumna.setCellValueFactory(cellData -> cellData.getValue().getApellido());
+
+		//Limpiar detalles de persona
+		showPersonaDetails(null);
+
+		//Escuche los cambios de selección y muestre los detalles de la persona cuando cambie.
+		personTable.getSelectionModel().selectedItemProperty().addListener(
+				(observable, oldValue, newValue) -> showPersonaDetails(newValue));
+	}
+\end{minted}
+
+Con \codigo{showPersonDetails(null);} borramos los detalles de una persona.\\
+Con \codigo{personaTable.getSelectionModel...} obtenemos la \textit{selectedItemProperty} de la tabla de personas, 
+y le añadimos un \textit{listener}. Cuando quiera que el usuario seleccione a una persona en la tabla, 
+nuestra \textit{lambda expression} será ejecutada: se toma la persona recien seleccionada y se le pasa al 
+método \codigo{showPersonDetails(...)}. \\
+Intenta \textbf{ejecutar tu aplicación} en este momento. Comprueba que cuando seleccionas a una persona, 
+los detalles sobre esta son mostrados en la parte derecha de la ventana. \\
+Si algo no funciona, puedes comparar tu clase \codigo{PersonaOverviewController} con 
+\textcolor{azul}{\href{https://github.com/mateomtz199/direccionesapp-part4}{PersonOverviewController.java}}.
+
+\section{El botón de borrar (Delete)}
+Nuestro interfaz de usuario ya contiene un botón de borrar, pero sin funcionalidad. Podemos seleccionar la 
+acción a ejecutar al pulsar un botón desde el \textit{Scene Builder}. Cualquier método de nuestro controlador 
+anotado con \codigo{ @FXML} (o declarado como \textit{public}) es accesible desde \textit{Scene Builder}. 
+Así pues, empecemos añadiendo el método de borrado al final de nuestra clase \codigo{PersonaOverviewController}:\\
+\codigo{PersonaOverviewController.java}
+
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+    breaklines=true,
+    ]{java}
+    /**
+	 * Se llama cuando el usuario hace clic en el botón Eliminar.
+	 */
+	@FXML
+	private void handleDeletePersona(){
+		int selectedIndex = personTable.getSelectionModel().getSelectedIndex();
+		if(selectedIndex >= 0){
+			personTable.getItems().remove(selectedIndex);
+		}
+		else {
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Sin seleccion");
+			alert.setHeaderText("No has seleccionado una persona");
+			alert.setContentText("Por favor selecciona una persona de la lista para eliminar");
+			alert.showAndWait();
+		}
+	}
+\end{minted}
+

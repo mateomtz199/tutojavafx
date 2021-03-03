@@ -25,3 +25,6 @@
 \contentsline {section}{\numberline {3.1}Contenidos en parte 3}{31}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Respuesta a cambios en la selección de la Tabla}{31}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Convierte la fecha de nacimiento en una cadena}{32}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Utilización de la clase DateUtil}{34}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Detecta cambios de selección en la tabla}{34}{section.3.4}%
+\contentsline {section}{\numberline {3.5}El botón de borrar (Delete)}{35}{section.3.5}%

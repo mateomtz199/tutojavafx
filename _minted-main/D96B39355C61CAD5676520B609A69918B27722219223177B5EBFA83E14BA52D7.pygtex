@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Inicializa la clase de controlador}
+\PYG{c+cm}{	 * Este método se llama automáticamente después de cargar el archivo fxml.}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{initialize}\PYG{p}{()\PYGZob{}}
+		\PYG{c+c1}{//Inicialice la tabla de personas con las dos columnas.}
+		\PYG{n}{nombresColumna}\PYG{p}{.}\PYG{n+na}{setCellValueFactory}\PYG{p}{(}\PYG{n}{cellData} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{cellData}\PYG{p}{.}\PYG{n+na}{getValue}\PYG{p}{().}\PYG{n+na}{getNombre}\PYG{p}{());}
+		\PYG{n}{apellidosColumna}\PYG{p}{.}\PYG{n+na}{setCellValueFactory}\PYG{p}{(}\PYG{n}{cellData} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{cellData}\PYG{p}{.}\PYG{n+na}{getValue}\PYG{p}{().}\PYG{n+na}{getApellido}\PYG{p}{());}
+
+		\PYG{c+c1}{//Limpiar detalles de persona}
+		\PYG{n}{showPersonaDetails}\PYG{p}{(}\PYG{k+kc}{null}\PYG{p}{);}
+
+		\PYG{c+c1}{//Escuche los cambios de selección y muestre los detalles de la persona cuando cambie.}
+		\PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{getSelectionModel}\PYG{p}{().}\PYG{n+na}{selectedItemProperty}\PYG{p}{().}\PYG{n+na}{addListener}\PYG{p}{(}
+				\PYG{p}{(}\PYG{n}{observable}\PYG{p}{,} \PYG{n}{oldValue}\PYG{p}{,} \PYG{n}{newValue}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{showPersonaDetails}\PYG{p}{(}\PYG{n}{newValue}\PYG{p}{));}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{n}{onomasticoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{format}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getOnomastico}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()));}
+\end{Verbatim}

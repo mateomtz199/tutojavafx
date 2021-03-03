@@ -13,8 +13,8 @@
            \PYG{n}{codigoPostaLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCodigoPostal}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
            \PYG{n}{ciudadLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCiudad}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
            \PYG{c+c1}{//¡Necesitamos una forma de convertir el cumpleaños en una Cadena!}
-           \PYG{c+c1}{//onomasticoLabel.setText(...);}
-           \PYG{n}{onomasticoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{format}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getOnomastico}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()));}
+           \PYG{n}{onomasticoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(...);}
+           \PYG{c+c1}{// onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));}
        \PYG{p}{\PYGZcb{}}\PYG{k}{else} \PYG{p}{\PYGZob{}}
            \PYG{c+c1}{//Si la persona es nula, quitar todo el texto}
            \PYG{n}{nombreLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}

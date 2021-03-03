@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Se llama cuando el usuario hace clic en el botón Eliminar.}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{handleDeletePersona}\PYG{p}{()\PYGZob{}}
+		\PYG{k+kt}{int} \PYG{n}{selectedIndex} \PYG{o}{=} \PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{getSelectionModel}\PYG{p}{().}\PYG{n+na}{getSelectedIndex}\PYG{p}{();}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{selectedIndex} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{p}{)\PYGZob{}}
+			\PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{getItems}\PYG{p}{().}\PYG{n+na}{remove}\PYG{p}{(}\PYG{n}{selectedIndex}\PYG{p}{);}
+		\PYG{p}{\PYGZcb{}}
+		\PYG{k}{else} \PYG{p}{\PYGZob{}}
+			\PYG{n}{Alert} \PYG{n}{alert} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Alert}\PYG{p}{(}\PYG{n}{AlertType}\PYG{p}{.}\PYG{n+na}{WARNING}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setTitle}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Sin seleccion\PYGZdq{}}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setHeaderText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}No has seleccionado una persona\PYGZdq{}}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setContentText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Por favor selecciona una persona de la lista para eliminar\PYGZdq{}}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{showAndWait}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
