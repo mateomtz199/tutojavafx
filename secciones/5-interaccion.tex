@@ -1,0 +1,59 @@
+\chapter{Modelo y TableView}
+
+\section{Contenidos en parte 3}
+\begin{itemize}
+    \item Respuesta a cambios en la selección dentro de la tabla.
+    \item Añade funcionalidad de los botones añadir, editar, y borrar.
+    \item Crear un diálogo emergente (popup dialog) a medida para editar un contacto.
+    \item Validación de la entrada del usuario.
+\end{itemize}
+
+\section{Respuesta a cambios en la selección de la Tabla}
+Todavía no hemos usado la parte derecha de la interfaz de nuestra aplicación. 
+La intención es usar esta parte para mostrar los detalles de la persona seleccionada por 
+el usuario en la tabla. \\
+En primer lugar vamos a añadir un nuevo método dentro de \codigo{PersonOverviewController} que nos ayude a 
+rellenar las etiquetas con los datos de una sola persona. \\
+
+Crea un método llamado \codigo{showPersonaDetails(Persona persona)}. Este método recorrerá todas las etiquetas y 
+establecerá el texto con detalles de la persona usando \codigo{setText(...)}. Si en vez de una instancia de 
+\codigo{Person} se pasa null entonces las etiquetas deben ser borradas. \\
+\codigo{PersonOverviewController.java} nuevo método \codigo{showPersonaDetails(Persona persona)}
+
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+    breaklines=true,
+    ]{java}
+
+    /**
+	 * Rellena todos los campos de texto para mostrar detalles sobre la persona.
+	 * Si la persona especificada es nula, se borran todos los campos de texto.
+	 * @param persona
+	 */
+	private void showPersonaDetails(Persona persona){
+		if(persona != null){
+			//Rellene las etiquetas con información del objeto persona.
+			nombreLabel.setText(persona.getNombre().get());
+			apelidoLabel.setText(persona.getApellido().get());
+			calleLabel.setText(persona.getCalle().get());
+			codigoPostaLabel.setText(persona.getCodigoPostal().get() + "");
+			ciudadLabel.setText(persona.getCiudad().get());
+			//¡Necesitamos una forma de convertir el cumpleaños en una Cadena!
+			//onomasticoLabel.setText(...);
+			onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
+		}else {
+			//Si la persona es nula, quitar todo el texto
+			nombreLabel.setText("");
+			apelidoLabel.setText("");
+			calleLabel.setText("");
+			codigoPostaLabel.setText("");
+			ciudadLabel.setText("");
+			onomasticoLabel.setText("");
+		}
+	}
+
+\end{minted}
