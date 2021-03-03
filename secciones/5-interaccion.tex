@@ -1,4 +1,4 @@
-\chapter{Modelo y TableView}
+\chapter{Interacción con el usuario}
 
 \section{Contenidos en parte 3}
 \begin{itemize}
@@ -18,8 +18,8 @@ rellenar las etiquetas con los datos de una sola persona. \\
 Crea un método llamado \codigo{showPersonaDetails(Persona persona)}. Este método recorrerá todas las etiquetas y 
 establecerá el texto con detalles de la persona usando \codigo{setText(...)}. Si en vez de una instancia de 
 \codigo{Person} se pasa null entonces las etiquetas deben ser borradas. \\
-\codigo{PersonOverviewController.java} nuevo método \codigo{showPersonaDetails(Persona persona)}
 
+\codigo{PersonOverviewController.java} nuevo método \codigo{showPersonaDetails(Persona persona)}
 \begin{minted}[
     linenos,
     numbersep=5pt,
@@ -30,30 +30,107 @@ establecerá el texto con detalles de la persona usando \codigo{setText(...)}. S
     ]{java}
 
     /**
-	 * Rellena todos los campos de texto para mostrar detalles sobre la persona.
-	 * Si la persona especificada es nula, se borran todos los campos de texto.
-	 * @param persona
-	 */
-	private void showPersonaDetails(Persona persona){
-		if(persona != null){
-			//Rellene las etiquetas con información del objeto persona.
-			nombreLabel.setText(persona.getNombre().get());
-			apelidoLabel.setText(persona.getApellido().get());
-			calleLabel.setText(persona.getCalle().get());
-			codigoPostaLabel.setText(persona.getCodigoPostal().get() + "");
-			ciudadLabel.setText(persona.getCiudad().get());
-			//¡Necesitamos una forma de convertir el cumpleaños en una Cadena!
-			//onomasticoLabel.setText(...);
-			onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
-		}else {
-			//Si la persona es nula, quitar todo el texto
-			nombreLabel.setText("");
-			apelidoLabel.setText("");
-			calleLabel.setText("");
-			codigoPostaLabel.setText("");
-			ciudadLabel.setText("");
-			onomasticoLabel.setText("");
-		}
-	}
+    * Rellena todos los campos de texto para mostrar detalles sobre la persona.
+    * Si la persona especificada es nula, se borran todos los campos de texto.
+    * @param persona
+    */
+   private void showPersonaDetails(Persona persona){
+       if(persona != null){
+           //Rellene las etiquetas con información del objeto persona.
+           nombreLabel.setText(persona.getNombre().get());
+           apelidoLabel.setText(persona.getApellido().get());
+           calleLabel.setText(persona.getCalle().get());
+           codigoPostaLabel.setText(persona.getCodigoPostal().get() + "");
+           ciudadLabel.setText(persona.getCiudad().get());
+           //¡Necesitamos una forma de convertir el cumpleaños en una Cadena!
+           //onomasticoLabel.setText(...);
+           onomasticoLabel.setText(DateUtil.format(persona.getOnomastico().get()));
+       }else {
+           //Si la persona es nula, quitar todo el texto
+           nombreLabel.setText("");
+           apelidoLabel.setText("");
+           calleLabel.setText("");
+           codigoPostaLabel.setText("");
+           ciudadLabel.setText("");
+           onomasticoLabel.setText("");
+       }
+   }
+\end{minted}
+
+\section{Convierte la fecha de nacimiento en una cadena}
+Te darás cuenta de que no podemos usar el atributo \codigo{onomastico} directamente 
+para establecer el valor de una \codigo{Label} porque se requiere un \codigo{String}, y \codigo{onomastico} es de 
+tipo \codigo{LocalDate}. Así pues necesitamos convertir \codigo{onomastico} de \codigo{LocalDate} a \codigo{String}.\\
+
+En la práctica vamos a necesitar convertir entre \codigo{LocalDate} y \codigo{String} en varios sitios y en ambos 
+sentidos. Una buena práctica es crear una clase auxiliar con métodos estáticos (\codigo{static}) para esta finalidad. 
+Llamaremos a esta clase \codigo{DateUtil} y la ubicaremos una paquete separado denominado \codigo{ch.makery.direcciones.util}:\\
+
+\codigo{DateUtil.java}
+\begin{minted}[
+    linenos,
+    numbersep=5pt,
+    gobble=0,
+    frame=lines,
+    framesep=2mm,
+    breaklines=true,
+    ]{java}
+
+    package ch.makery.direcciones.util;
+
+    import java.time.LocalDate;
+    import java.time.format.DateTimeFormatter;
+    
+    /**
+     * Funciones de ayuda para manejar fechas.
+     * @author Marco Jakob
+     *
+     */
+    public class DateUtil {
+        /**
+         * El patrón de fecha que se utiliza para la conversión.
+         * Cambialo como quieras.
+         */
+        private static final String DATE_PATTERN = "dd-MM-yyyy";
+        /**
+         * Formateado de fecha
+         */
+        private static final DateTimeFormatter DATE_FORMATTER =
+                DateTimeFormatter.ofPattern(DATE_PATTERN);
+        /**
+         * Devuelve la fecha que se pasó como parametro en una cadena
+         * @param date fecha en formato LocalDate
+         * @return fecha en un String
+         */
+        public static String format(LocalDate date){
+            if(date == null){
+                return null;
+            }
+            return DATE_FORMATTER.format(date);
+        }
+        /**
+         * Convierte una cadena en formato de fecha a un objeto LocalDate
+         * Retorna nulo si la cadena no pudo convertirse
+         *
+         * @param dateString fecha como un String
+         * @return un objeto de tipo fecha, si no se pudo convertir retorna nulo
+         */
+        public static LocalDate parse(String dateString){
+            try {
+                return DATE_FORMATTER.parse(dateString, LocalDate::from);
+            } catch (Exception e) {
+                return null;
+            }
+        }
+        /**
+         * Comprueba la cadena si es una fecha valida
+         * @param dateString
+         * @return verdadero si la cadena es una fecha valida.
+         */
+        public static boolean validDate(String dateString){
+            //Intenta analizar la cadena
+            return DateUtil.parse(dateString) != null;
+        }
+    }
 
 \end{minted}

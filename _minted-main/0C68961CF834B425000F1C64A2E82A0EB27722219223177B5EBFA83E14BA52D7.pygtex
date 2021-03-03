@@ -1,0 +1,28 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/**}
+\PYG{c+cm}{    * Rellena todos los campos de texto para mostrar detalles sobre la persona.}
+\PYG{c+cm}{    * Si la persona especificada es nula, se borran todos los campos de texto.}
+\PYG{c+cm}{    * @param persona}
+\PYG{c+cm}{    */}
+   \PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{showPersonaDetails}\PYG{p}{(}\PYG{n}{Persona} \PYG{n}{persona}\PYG{p}{)\PYGZob{}}
+       \PYG{k}{if}\PYG{p}{(}\PYG{n}{persona} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{)\PYGZob{}}
+           \PYG{c+c1}{//Rellene las etiquetas con información del objeto persona.}
+           \PYG{n}{nombreLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getNombre}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+           \PYG{n}{apelidoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getApellido}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+           \PYG{n}{calleLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCalle}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+           \PYG{n}{codigoPostaLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCodigoPostal}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{ciudadLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCiudad}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+           \PYG{c+c1}{//¡Necesitamos una forma de convertir el cumpleaños en una Cadena!}
+           \PYG{c+c1}{//onomasticoLabel.setText(...);}
+           \PYG{n}{onomasticoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{format}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getOnomastico}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()));}
+       \PYG{p}{\PYGZcb{}}\PYG{k}{else} \PYG{p}{\PYGZob{}}
+           \PYG{c+c1}{//Si la persona es nula, quitar todo el texto}
+           \PYG{n}{nombreLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{apelidoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{calleLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{codigoPostaLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{ciudadLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+           \PYG{n}{onomasticoLabel}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+       \PYG{p}{\PYGZcb{}}
+   \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

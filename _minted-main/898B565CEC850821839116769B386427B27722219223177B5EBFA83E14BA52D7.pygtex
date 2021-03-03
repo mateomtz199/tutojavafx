@@ -1,0 +1,58 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kn}{package} \PYG{n+nn}{ch.makery.direcciones.util}\PYG{p}{;}
+
+    \PYG{k+kn}{import} \PYG{n+nn}{java.time.LocalDate}\PYG{p}{;}
+    \PYG{k+kn}{import} \PYG{n+nn}{java.time.format.DateTimeFormatter}\PYG{p}{;}
+
+    \PYG{c+cm}{/**}
+\PYG{c+cm}{     * Funciones de ayuda para manejar fechas.}
+\PYG{c+cm}{     * @author Marco Jakob}
+\PYG{c+cm}{     *}
+\PYG{c+cm}{     */}
+    \PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{DateUtil} \PYG{p}{\PYGZob{}}
+        \PYG{c+cm}{/**}
+\PYG{c+cm}{         * El patrón de fecha que se utiliza para la conversión.}
+\PYG{c+cm}{         * Cambialo como quieras.}
+\PYG{c+cm}{         */}
+        \PYG{k+kd}{private} \PYG{k+kd}{static} \PYG{k+kd}{final} \PYG{n}{String} \PYG{n}{DATE\PYGZus{}PATTERN} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}dd\PYGZhy{}MM\PYGZhy{}yyyy\PYGZdq{}}\PYG{p}{;}
+        \PYG{c+cm}{/**}
+\PYG{c+cm}{         * Formateado de fecha}
+\PYG{c+cm}{         */}
+        \PYG{k+kd}{private} \PYG{k+kd}{static} \PYG{k+kd}{final} \PYG{n}{DateTimeFormatter} \PYG{n}{DATE\PYGZus{}FORMATTER} \PYG{o}{=}
+                \PYG{n}{DateTimeFormatter}\PYG{p}{.}\PYG{n+na}{ofPattern}\PYG{p}{(}\PYG{n}{DATE\PYGZus{}PATTERN}\PYG{p}{);}
+        \PYG{c+cm}{/**}
+\PYG{c+cm}{         * Devuelve la fecha que se pasó como parametro en una cadena}
+\PYG{c+cm}{         * @param date fecha en formato LocalDate}
+\PYG{c+cm}{         * @return fecha en un String}
+\PYG{c+cm}{         */}
+        \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{n}{String} \PYG{n+nf}{format}\PYG{p}{(}\PYG{n}{LocalDate} \PYG{n}{date}\PYG{p}{)\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{date} \PYG{o}{==} \PYG{k+kc}{null}\PYG{p}{)\PYGZob{}}
+                \PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+            \PYG{k}{return} \PYG{n}{DATE\PYGZus{}FORMATTER}\PYG{p}{.}\PYG{n+na}{format}\PYG{p}{(}\PYG{n}{date}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{c+cm}{/**}
+\PYG{c+cm}{         * Convierte una cadena en formato de fecha a un objeto LocalDate}
+\PYG{c+cm}{         * Retorna nulo si la cadena no pudo convertirse}
+\PYG{c+cm}{         *}
+\PYG{c+cm}{         * @param dateString fecha como un String}
+\PYG{c+cm}{         * @return un objeto de tipo fecha, si no se pudo convertir retorna nulo}
+\PYG{c+cm}{         */}
+        \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{n}{LocalDate} \PYG{n+nf}{parse}\PYG{p}{(}\PYG{n}{String} \PYG{n}{dateString}\PYG{p}{)\PYGZob{}}
+            \PYG{k}{try} \PYG{p}{\PYGZob{}}
+                \PYG{k}{return} \PYG{n}{DATE\PYGZus{}FORMATTER}\PYG{p}{.}\PYG{n+na}{parse}\PYG{p}{(}\PYG{n}{dateString}\PYG{p}{,} \PYG{n}{LocalDate}\PYG{p}{::}\PYG{n}{from}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{catch} \PYG{p}{(}\PYG{n}{Exception} \PYG{n}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{c+cm}{/**}
+\PYG{c+cm}{         * Comprueba la cadena si es una fecha valida}
+\PYG{c+cm}{         * @param dateString}
+\PYG{c+cm}{         * @return verdadero si la cadena es una fecha valida.}
+\PYG{c+cm}{         */}
+        \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{boolean} \PYG{n+nf}{validDate}\PYG{p}{(}\PYG{n}{String} \PYG{n}{dateString}\PYG{p}{)\PYGZob{}}
+            \PYG{c+c1}{//Intenta analizar la cadena}
+            \PYG{k}{return} \PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{parse}\PYG{p}{(}\PYG{n}{dateString}\PYG{p}{)} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

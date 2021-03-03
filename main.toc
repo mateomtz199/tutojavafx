@@ -21,6 +21,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Conexión de MainApp con PersonOverviewController}{28}{subsection.2.4.1}%
 \contentsline {section}{\numberline {2.5}Vincular la vista al controlador}{28}{section.2.5}%
 \contentsline {section}{\numberline {2.6}Inicia la aplicación}{30}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Modelo y TableView}{31}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Interacción con el usuario}{31}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Contenidos en parte 3}{31}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Respuesta a cambios en la selección de la Tabla}{31}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Convierte la fecha de nacimiento en una cadena}{32}{section.3.3}%
