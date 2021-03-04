@@ -1001,6 +1001,9 @@ INPUT c:\Programacion\Latex\tutojavafx\secciones\4-Modelo.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
 OUTPUT c:\Programacion\Latex\tutojavafx\main.aux
 INPUT C:\Users\Yo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Yo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1532,6 +1535,17 @@ INPUT c:\Programacion\Latex\tutojavafx\_minted-main\0E419A6AD514ABFBE5AFBC5F04A7
 INPUT c:\Programacion\Latex\tutojavafx\_minted-main\0E419A6AD514ABFBE5AFBC5F04A7D5A8B27722219223177B5EBFA83E14BA52D7.pygtex
 INPUT c:\Programacion\Latex\tutojavafx\_minted-main\0E419A6AD514ABFBE5AFBC5F04A7D5A8B27722219223177B5EBFA83E14BA52D7.pygtex
 INPUT c:\Programacion\Latex\tutojavafx\_minted-main\0E419A6AD514ABFBE5AFBC5F04A7D5A8B27722219223177B5EBFA83E14BA52D7.pygtex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+OUTPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.tex
 INPUT c:\Programacion\Latex\tutojavafx\main.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\1-Portada.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\1-Portada.aux
@@ -1548,6 +1562,9 @@ INPUT c:\Programacion\Latex\tutojavafx\secciones\4-Modelo.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
 INPUT c:\Programacion\Latex\tutojavafx\secciones\5-interaccion.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
+INPUT c:\Programacion\Latex\tutojavafx\secciones\6-estilos.aux
 INPUT c:\Programacion\Latex\tutojavafx\main.out
 INPUT c:\Programacion\Latex\tutojavafx\main.out
 INPUT c:\Programacion\Latex\tutojavafx\main.pyg

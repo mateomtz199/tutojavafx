@@ -35,3 +35,12 @@
 \contentsline {subsection}{\numberline {3.7.3}Enlaza la vista y el controlador}{43}{subsection.3.7.3}%
 \contentsline {subsection}{\numberline {3.7.4}Abriendo la ventana de diálogo}{43}{subsection.3.7.4}%
 \contentsline {section}{\numberline {3.8}¡Ya está!}{45}{section.3.8}%
+\contentsline {chapter}{\numberline {4}Hojas de estilo CSS}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Contenidos en Parte 4}{46}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Estilos mediante CSS}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Familiarizándose con CSS}{46}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Estilo por defecto en JavaFX}{46}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Vinculando hojas de estilo CSS}{47}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}Añadiendo un icono a la aplicación}{48}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}El archivo de icono}{48}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Establece el icono de la escena principal}{48}{subsection.4.3.2}%

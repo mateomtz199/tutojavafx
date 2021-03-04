@@ -1,0 +1,112 @@
+\chapter{Hojas de estilo CSS}
+% Imagen faltaaaaaaaaa    
+\section{Contenidos en Parte 4}
+\begin{itemize}
+    \item Estilos mediante CSS
+    \item Añadiendo un Icono de Aplicación
+\end{itemize}
+\section{Estilos mediante CSS}
+En JavaFX puedes dar estilo al interfaz de usuario utilizando hojas de estilo en cascada (CSS). 
+¡Esto es estupendo! Nunca había sido tan fácil personalizar la apariencia de una aplicación Java.\\
+En este tutorial vamos a crear un tema oscuro (DarkTheme) inspirado en el diseño de Windows 8 Metro. 
+El código CSS de los botones está basado en el artículo de blog  
+\textcolor{azul}{\href{https://pixelduke.com/2012/10/23/jmetro-windows-8-controls-on-java/}{JMetro - Windows 8 Metro controls on 
+Java}} por Pedro Duque Vieira.
+\subsection{Familiarizándose con CSS}
+Para poder aplicar estilos a una aplicación JavaFX application debes tener una comprensión básica de CSS 
+en general. Un buen punto de partida es este tutorial: 
+\textcolor{azul}{\href{https://www.csstutorial.net/}{CSS tutorial}}.\\
+Para información más específica de CSS y JavaFX puedes consultar:
+\begin{itemize}
+    \item \textcolor{azul}{\href{https://docs.oracle.com/javase/8/javafx/user-interface-tutorial/css_tutorial.htm}{Skinning JavaFX Applications with CSS}} - Tutorial de Oracle
+    \item \textcolor{azul}{\href{https://docs.oracle.com/javase/8/javafx/api/javafx/scene/doc-files/cssref.html}{JavaFX CSS Reference}} - Referencia oficial
+\end{itemize}
+\subsection{Estilo por defecto en JavaFX}
+Los estilos por defecto de JavaFX 8 se encuentran en un archivo denominado \codigo{modena.css}. 
+Este archivo CSS se encuentra dentro del archivo jar \codigo{jfxrt.jar} que se encuentra en tu 
+directorio de instalación de Java, en la ruta \codigo{/jdk1.8.x/jre/lib/ext/jfxrt.jar}.\\
+Puedes descomprimir \codigo{jfxrt.jar} o abrirlo como si fuera un zip. Encontrarás el archivo 
+\codigo{modena.css} en la ruta \codigo{com/sun/javafx/scene/control/skin/modena/}\\
+Este estilo se aplica siempre a una aplicación JavaFX. Añadiendo un estilo personal 
+podemos reescribir los estilos por defecto definidos en \codigo{modena.css}.
+
+\begin{tcolorbox}[leftrule=3mm]
+	\textbf{Truco:} Ayuda consultar el archivo CSS por defecto para ver qué estilos necesitas sobreescribir.
+\end{tcolorbox}
+\subsection{Vinculando hojas de estilo CSS}
+Añade un archivo CSS denominado \codigo{DarkTheme.css} al paquete \textit{view}.\\
+\codigo{DarkTheme.css}
+
+%
+% Código
+%
+A continuación, necesitamos vincular el CSS a nuestra escena. Podemos hacer esto programáticamente, 
+mediante código Java, pero en esta ocasión vamos a utilizar \textit{Scene Builder} para añadirlo a 
+nuestros archivos FXML:\\
+\subsubsection*{Añade el CSS a RootLayout.fxml}
+\begin{enumerate}
+    \item Abre el archivo \codigo{RootLayout.fxml} en \textit{Scene Builder}.
+    %Imagen
+    \item Selecciona el \codigo{BorderPane} raíz en la sección \textit{Hiperarchy}. En la vista \textit{Properties} añade 
+    el archivo \codigo{DarkTheme.css} como hoja de estilo (campo denominado \codigo{Stylesheets}).
+    %Imagen
+\end{enumerate}
+
+\subsubsection*{Añade el CSS a PersonEditDialog.fxml}
+\begin{enumerate}
+    \item Abre el archivo \codigo{PersonEditDialog.fxml} en \textit{Scene Builder}. Selecciona el \codigo{AnchorPane} 
+    raíz e incluye \codigo{DarkTheme.css} como hoja de estilo en la sección \textit{Properties}.
+    \item El fondo todavía es blanco, hay que añadir la clase \codigo{background} al \codigo{AnchorPane} raíz.
+    %Imagen
+    \item Selecciona el botón OK y elige \textit{Default Button} en la vista \textit{Properties}. Eso cambiará su 
+    color y lo convertirá en el botón “por defecto”, el que se ejecutará si el usuario aprieta la tecla \textit{enter}.
+\end{enumerate}
+\subsubsection*{Añade el CSS a PersonOverview.fxml}
+\begin{enumerate}
+    \item Abre el archivo \codigo{PersonOverview.fxml} en \textit{Scene Builder}. Selecciona el \codigo{AnchorPane} raíz 
+    en la sección \textit{Hierarchy} y añade \codigo{DarkTheme.css} a sus \codigo{Stylesheets}.
+    \item A estas alturas deberías haber observado algunos cambios: La tabla y los botones son negros. 
+    Las clases de estilo \codigo{.table-view} y \codigo{.button} de \codigo{modena.css} se aplican automáticamente a la tabla y 
+    los botones. Ya que hemos redefinido (sobreescrito) algunos de esos estilos en nuestro propio CSS, 
+    los nuevos estilos se aplican automáticamente.
+    \item Posiblemente tengas que ajustar el tamaño de los botones para que se muestre todo el texto.
+    \item Selecciona el panel \codigo{AnchorPane} de la derecha, dentro del \codigo{SplitPane}.
+    %Imagennnnnnnnnn
+    \item Ves a la vista \textit{Properties} y elige \codigo{background} como clase de estilo. 
+    El fondo debería volverse negro.
+    %Imagennnnnnnnnnnnn
+\end{enumerate}
+
+\subsubsection*{Etiquetas con un estilo diferente}
+En este momento, todas las etiquetas en el lado derecho tienen el mismo tamaño. 
+Ya tenemos definidos en el CSS unos estilos denominados \codigo{.label-header} y \codigo{.label-bright} 
+que vamos a usar para personalizar la apariencia de las etiquetas.
+\begin{enumerate}
+    \item Selecciona la etiqueta (\codigo{Label}) \textit{Detalle de personas} y añade \codigo{label-header} 
+    como clase de estilo.
+    %Imagennn
+    \item A cada etiqueta en la columna de la derecha (donde se muestran los detalles 
+    de una persona), añade la clase de estilo \codigo{label-bright}.
+    %Imagen
+\end{enumerate}
+
+\section{Añadiendo un icono a la aplicación}
+Ahora mismo nuestra aplicación utiliza el icono por defecto para la barra de título y la barra de tareas:\\
+%Imagen
+Quedaría mucho mejor con un icono propio:\\
+%Imagen}
+\subsection{El archivo de icono}
+Un posible sitio para obtener iconos gratuitos es Icon Finder. %Revisar, ya no existe la página
+Yo por ejemplo descargué este icono de libreta de direcciones.\\
+Crea una carpeta dentro de tu aplicación llamado \textbf{resources} y añádele una subcarpeta 
+para almacenar imágenes, llámala \textbf{images}. Pon el icono que hayas elegido dentro de la 
+carpeta de imágenes. La estructura de directorios de tu carpeta debe tener un aspecto similar a este:
+%Imagennnnnnnnnnn
+\subsection{Establece el icono de la escena principal}
+Para establecer el icono de nuestra escena debemos añadir la línea de 
+código siguiente al método \codigo{start(...)} dentro de \codigo{MainApp.java}.\\
+\codigo{MainApp.java}\\
+%Codifo en en mainapp una linea
+El método \codigo{start(...)} debería verse así ahora:\\
+%%Codigo completo
+También puedes añadir un icono a la escena que contiene la venta de edición de los detalles de una persona.
