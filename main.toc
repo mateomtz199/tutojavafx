@@ -41,6 +41,6 @@
 \contentsline {subsection}{\numberline {4.2.1}Familiarizándose con CSS}{46}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Estilo por defecto en JavaFX}{46}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Vinculando hojas de estilo CSS}{47}{subsection.4.2.3}%
-\contentsline {section}{\numberline {4.3}Añadiendo un icono a la aplicación}{48}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}El archivo de icono}{48}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Establece el icono de la escena principal}{48}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.3}Añadiendo un icono a la aplicación}{51}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}El archivo de icono}{51}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Establece el icono de la escena principal}{52}{subsection.4.3.2}%

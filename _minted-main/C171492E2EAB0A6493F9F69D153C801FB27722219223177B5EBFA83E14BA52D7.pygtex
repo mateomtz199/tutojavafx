@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+c1}{//Colocar el icono}
+	\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{primaryStage}\PYG{p}{.}\PYG{n+na}{getIcons}\PYG{p}{().}\PYG{n+na}{add}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Image}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}file:resources/images/contacto.png\PYGZdq{}}\PYG{p}{));}
+\end{Verbatim}

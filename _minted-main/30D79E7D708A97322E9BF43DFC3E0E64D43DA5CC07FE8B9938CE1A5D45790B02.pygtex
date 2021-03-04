@@ -1,0 +1,145 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{p}{.}\PYG{n+nc}{background} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{label} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{11}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Semibold\PYGZdq{}}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mf}{0.6}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{label\PYGZhy{}bright} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{11}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Semibold\PYGZdq{}}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{label\PYGZhy{}header} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{32}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Light\PYGZdq{}}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}base}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}control\PYGZhy{}inner\PYGZhy{}background}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}table\PYGZhy{}cell\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}table\PYGZhy{}header\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}padding}\PYG{p}{:} \PYG{l+m+mi}{5}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view} \PYG{p}{.}\PYG{n+nc}{column\PYGZhy{}header\PYGZhy{}background} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view} \PYG{p}{.}\PYG{n+nc}{column\PYGZhy{}header}\PYG{o}{,} \PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view} \PYG{p}{.}\PYG{n+nc}{filler} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{35}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}width}\PYG{p}{:} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0} \PYG{l+m+mi}{1} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:}
+        \PYG{k+kc}{transparent}
+        \PYG{k+kc}{transparent}
+        \PYG{n+nf}{derive}\PYG{p}{(}\PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}base}\PYG{p}{,} \PYG{l+m+mi}{80}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{)}
+        \PYG{k+kc}{transparent}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}insets}\PYG{p}{:} \PYG{l+m+mi}{0} \PYG{l+m+mi}{10} \PYG{l+m+mi}{1} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view} \PYG{p}{.}\PYG{n+nc}{column\PYGZhy{}header} \PYG{p}{.}\PYG{n+nc}{label} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{20}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Light\PYGZdq{}}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}alignment}\PYG{p}{:} \PYG{k+kc}{center}\PYG{o}{\PYGZhy{}}\PYG{k+kc}{left}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}view}\PYG{p}{:}\PYG{n+nd}{focused} \PYG{p}{.}\PYG{n+nc}{table\PYGZhy{}row\PYGZhy{}cell}\PYG{p}{:}\PYG{n+nd}{filled}\PYG{p}{:}\PYG{n+nd}{focused}\PYG{p}{:}\PYG{n+nd}{selected} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{o}{\PYGZhy{}}\PYG{n}{fx\PYGZhy{}focus\PYGZhy{}color}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{split\PYGZhy{}pane}\PYG{p}{:}\PYG{n+nd}{horizontal} \PYG{o}{\PYGZgt{}} \PYG{p}{.}\PYG{n+nc}{split\PYGZhy{}pane\PYGZhy{}divider} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent} \PYG{l+m+mh}{\PYGZsh{}1d1d1d} \PYG{k+kc}{transparent} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{transparent}\PYG{p}{,} \PYG{n+nf}{derive}\PYG{p}{(}\PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{,}\PYG{l+m+mi}{20}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{split\PYGZhy{}pane} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}padding}\PYG{p}{:} \PYG{l+m+mi}{1} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{menu\PYGZhy{}bar} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{n+nf}{derive}\PYG{p}{(}\PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{,}\PYG{l+m+mi}{20}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{context\PYGZhy{}menu} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{n+nf}{derive}\PYG{p}{(}\PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{,}\PYG{l+m+mi}{50}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{menu\PYGZhy{}bar} \PYG{p}{.}\PYG{n+nc}{label} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{14}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Light\PYGZdq{}}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mf}{0.9}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{menu} \PYG{p}{.}\PYG{n+nc}{left\PYGZhy{}container} \PYG{p}{\PYGZob{}}
+	\PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{black}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{text\PYGZhy{}field} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{12}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI Semibold\PYGZdq{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c}{/*}
+\PYG{c}{ * Metro style Push Button}
+\PYG{c}{ * Author: Pedro Duque Vieira}
+\PYG{c}{ * http://pixelduke.wordpress.com/2012/10/23/jmetro\PYGZhy{}windows\PYGZhy{}8\PYGZhy{}controls\PYGZhy{}on\PYGZhy{}java/}
+\PYG{c}{ */}
+\PYG{p}{.}\PYG{n+nc}{button} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}padding}\PYG{p}{:} \PYG{l+m+mi}{5} \PYG{l+m+mi}{22} \PYG{l+m+mi}{5} \PYG{l+m+mi}{22}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}e2e2e2}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}width}\PYG{p}{:} \PYG{l+m+mi}{2}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}radius}\PYG{p}{:} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}family}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Segoe UI\PYGZdq{}}\PYG{p}{,} \PYG{n}{Helvetica}\PYG{p}{,} \PYG{n}{Arial}\PYG{p}{,} \PYG{k+kc}{sans\PYGZhy{}serif}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}font\PYGZhy{}size}\PYG{p}{:} \PYG{l+m+mi}{11}\PYG{k+kt}{pt}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}d8d8d8}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}insets}\PYG{p}{:} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{hover} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}3a3a3a}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{pressed}\PYG{o}{,} \PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{default}\PYG{p}{:}\PYG{n+nd}{hover}\PYG{p}{:}\PYG{n+nd}{pressed} \PYG{p}{\PYGZob{}}
+  \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+  \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{focused} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}color}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{,} \PYG{k+kc}{white}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}width}\PYG{p}{:} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}style}\PYG{p}{:} \PYG{k+kc}{solid}\PYG{p}{,} \PYG{n+nf}{segments}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{);}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}radius}\PYG{p}{:} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}border\PYGZhy{}insets}\PYG{p}{:} \PYG{l+m+mi}{1} \PYG{l+m+mi}{1} \PYG{l+m+mi}{1} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{disabled}\PYG{o}{,} \PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{default}\PYG{p}{:}\PYG{n+nd}{disabled} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}opacity}\PYG{p}{:} \PYG{l+m+mf}{0.4}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}1d1d1d}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{k+kc}{white}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{default} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{o}{\PYGZhy{}}\PYG{n}{fx\PYGZhy{}focus\PYGZhy{}color}\PYG{p}{;}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}text\PYGZhy{}fill}\PYG{p}{:} \PYG{l+m+mh}{\PYGZsh{}ffffff}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{p}{.}\PYG{n+nc}{button}\PYG{p}{:}\PYG{n+nd}{default}\PYG{p}{:}\PYG{n+nd}{hover} \PYG{p}{\PYGZob{}}
+    \PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}background\PYGZhy{}color}\PYG{p}{:} \PYG{n+nf}{derive}\PYG{p}{(}\PYG{n+nv}{\PYGZhy{}fx\PYGZhy{}focus\PYGZhy{}color}\PYG{p}{,}\PYG{l+m+mi}{30}\PYG{k+kt}{\PYGZpc{}}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

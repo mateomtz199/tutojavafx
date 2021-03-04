@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.28)  4 MAR 2021 00:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.28)  4 MAR 2021 10:36
 entering extended mode
 **c:/Programacion/Latex/tutojavafx/main.tex
 (c:/Programacion/Latex/tutojavafx/main.tex
@@ -1140,16 +1140,29 @@ Parte 4.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--46
+\openout6 = `main.pyg'.
+
+ (c:/Programacion\Latex\tutojavafx\_minted-main/30D79E7D708A97322E9BF43DFC3E0E64D43DA5CC07FE8B9938CE1A5D45790B02.pygtex [47] [48]
+Overfull \hbox (35.82703pt too wide) in paragraph at lines 100--100
+\OT1/lmtt/m/it/12 http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/[]|  
+ []
+
+[49])
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
 
  []
 
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 94--98
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 242--246
 
  []
 
-) [48] (c:/Programacion\Latex\tutojavafx\main.aux (c:/Programacion\Latex\tutojavafx\secciones/1-Portada.aux)
+\openout6 = `main.pyg'.
+
+(c:/Programacion\Latex\tutojavafx\_minted-main/C171492E2EAB0A6493F9F69D153C801FB27722219223177B5EBFA83E14BA52D7.pygtex [51])
+\openout6 = `main.pyg'.
+
+ (c:/Programacion\Latex\tutojavafx\_minted-main/CE60B1D7EE70190B74F1BDAAF94C4B0BB27722219223177B5EBFA83E14BA52D7.pygtex)) [52] (c:/Programacion\Latex\tutojavafx\main.aux (c:/Programacion\Latex\tutojavafx\secciones/1-Portada.aux)
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
  (c:/Programacion\Latex\tutojavafx\secciones/2-Introduccion.aux) (c:/Programacion\Latex\tutojavafx\secciones/3-SceneBuilder.aux) (c:/Programacion\Latex\tutojavafx\secciones/4-Modelo.aux) (c:/Programacion\Latex\tutojavafx\secciones/5-interaccion.aux) (c:/Programacion\Latex\tutojavafx\secciones/6-estilos.aux))
@@ -1159,17 +1172,17 @@ runsystem(del main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 26237 strings out of 479334
- 491694 string characters out of 2858509
- 931803 words of memory out of 3000000
- 42922 multiletter control sequences out of 15000+200000
+ 26260 strings out of 479334
+ 493223 string characters out of 2858509
+ 932023 words of memory out of 3000000
+ 42932 multiletter control sequences out of 15000+200000
  450363 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,8n,88p,717b,711s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rmtt.enc}{C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Yo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtti10.pfb>
-Output written on c:/Programacion\Latex\tutojavafx\main.pdf (49 pages, 1032732 bytes).
+Output written on c:/Programacion\Latex\tutojavafx\main.pdf (53 pages, 1042527 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
+ 722 PDF objects out of 1000 (max. 8388607)
+ 192 named destinations out of 1000 (max. 500000)
  533 words of extra memory for PDF output out of 10000 (max. 10000000)
 
