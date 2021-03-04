@@ -1,0 +1,151 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kn}{package} \PYG{n+nn}{ch.makery.direcciones.view}\PYG{p}{;}
+
+\PYG{k+kn}{import} \PYG{n+nn}{ch.makery.direcciones.model.Persona}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{ch.makery.direcciones.util.DateUtil}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.fxml.FXML}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.Alert}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.TextField}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.control.Alert.AlertType}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.scene.image.Image}\PYG{p}{;}
+\PYG{k+kn}{import} \PYG{n+nn}{javafx.stage.Stage}\PYG{p}{;}
+
+\PYG{c+cm}{/**}
+\PYG{c+cm}{ * Diálogo para editar detalles de una persona}
+\PYG{c+cm}{ * @author Yo}
+\PYG{c+cm}{ *}
+\PYG{c+cm}{ */}
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{PersonEditDialogController} \PYG{p}{\PYGZob{}}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{nombreField}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{apellidoField}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{calleField}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{codigoPostalField}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{ciudadField}\PYG{p}{;}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{n}{TextField} \PYG{n}{onomasticoField}\PYG{p}{;}
+
+	\PYG{k+kd}{private} \PYG{n}{Stage} \PYG{n}{dialogStage}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{n}{Persona} \PYG{n}{persona}\PYG{p}{;}
+	\PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n}{okClicked} \PYG{o}{=} \PYG{k+kc}{false}\PYG{p}{;}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Inicializa la clase de controlador.}
+\PYG{c+cm}{	 * Este método se llama automáticamente después de cargar el archivo fxml.}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{initialize}\PYG{p}{()\PYGZob{}}
+
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Establece el escenario de este diálogo.}
+\PYG{c+cm}{	 * @param dialogStage}
+\PYG{c+cm}{	 */}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setDialogStage}\PYG{p}{(}\PYG{n}{Stage} \PYG{n}{dialogStage}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{dialogStage} \PYG{o}{=} \PYG{n}{dialogStage}\PYG{p}{;}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{dialogStage}\PYG{p}{.}\PYG{n+na}{getIcons}\PYG{p}{().}\PYG{n+na}{add}\PYG{p}{(}\PYG{k}{new} \PYG{n}{Image}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}file:resources/images/contacto.png\PYGZdq{}}\PYG{p}{));}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Establece la persona a editar en el diálogo.}
+\PYG{c+cm}{	 * @param persona}
+\PYG{c+cm}{	 */}
+	\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setPerson}\PYG{p}{(}\PYG{n}{Persona} \PYG{n}{persona}\PYG{p}{)\PYGZob{}}
+		\PYG{k}{this}\PYG{p}{.}\PYG{n+na}{persona} \PYG{o}{=} \PYG{n}{persona}\PYG{p}{;}
+		\PYG{n}{nombreField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getNombre}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+		\PYG{n}{apellidoField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getApellido}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+		\PYG{n}{calleField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCalle}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+		\PYG{n}{codigoPostalField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCodigoPostal}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{);}
+		\PYG{n}{ciudadField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getCiudad}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{());}
+		\PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{setText}\PYG{p}{(}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{format}\PYG{p}{(}\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{getOnomastico}\PYG{p}{().}\PYG{n+na}{get}\PYG{p}{()));}
+		\PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{setPromptText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}dd\PYGZhy{}mm\PYGZhy{}yyyy\PYGZdq{}}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Devuelve verdadero si el usuario hizo clic en aceptar}
+\PYG{c+cm}{	 * falso de lo contrario}
+\PYG{c+cm}{	 * @return}
+\PYG{c+cm}{	 */}
+	\PYG{k+kd}{public} \PYG{k+kt}{boolean} \PYG{n+nf}{isOkClicked}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{return} \PYG{n}{okClicked}\PYG{p}{;}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Valida la entrada del usuario en los campos de texto.}
+\PYG{c+cm}{	 * @return verdadero si la entrada es valida.}
+\PYG{c+cm}{	 */}
+	\PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n+nf}{isInputValid}\PYG{p}{()\PYGZob{}}
+		\PYG{n}{String} \PYG{n}{errorMessage} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{;}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{nombreField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{nombreField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}El nombre no es valido!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{apellidoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{apellidoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}El apellido no es valido!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{calleField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{calleField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}La calle no es valido!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{codigoPostalField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{codigoPostalField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}El código postal no es valido!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{// Intenta analizar el código postal en un int}
+            \PYG{k}{try} \PYG{p}{\PYGZob{}}
+                \PYG{n}{Integer}\PYG{p}{.}\PYG{n+na}{parseInt}\PYG{p}{(}\PYG{n}{codigoPostalField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{());}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{catch} \PYG{p}{(}\PYG{n}{NumberFormatException} \PYG{n}{e}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}El Código Postal no es valido, debe se un entero!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{ciudadField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{ciudadField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}No valid city!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{null} \PYG{o}{||} \PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{().}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}Onomastico no es valido!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{o}{!}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{validDate}\PYG{p}{(}\PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()))} \PYG{p}{\PYGZob{}}
+                \PYG{n}{errorMessage} \PYG{o}{+=} \PYG{l+s}{\PYGZdq{}El onomastico no es valido. Usa el formato dd\PYGZhy{}mm\PYGZhy{}yyyy!\PYGZbs{}n\PYGZdq{}}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{errorMessage}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{()} \PYG{o}{==} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{return} \PYG{k+kc}{true}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{// Mostrar mensaje de error.}
+        	\PYG{n}{Alert} \PYG{n}{alert} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Alert}\PYG{p}{(}\PYG{n}{AlertType}\PYG{p}{.}\PYG{n+na}{WARNING}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setTitle}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Campos no validos\PYGZdq{}}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setHeaderText}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Por favor corrige los campos no validos\PYGZdq{}}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{setContentText}\PYG{p}{(}\PYG{n}{errorMessage}\PYG{p}{);}
+			\PYG{n}{alert}\PYG{p}{.}\PYG{n+na}{showAndWait}\PYG{p}{();}
+            \PYG{k}{return} \PYG{k+kc}{false}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Se llama cuando el usuario hace clic en Aceptar}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{handleOk}\PYG{p}{()\PYGZob{}}
+		\PYG{k}{if}\PYG{p}{(}\PYG{n}{isInputValid}\PYG{p}{())\PYGZob{}}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setNombre}\PYG{p}{(}\PYG{n}{nombreField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{());}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setApellido}\PYG{p}{(}\PYG{n}{apellidoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{());}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setCalle}\PYG{p}{(}\PYG{n}{calleField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{());}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setCodigoPostal}\PYG{p}{(}\PYG{n}{Integer}\PYG{p}{.}\PYG{n+na}{parseInt}\PYG{p}{(}\PYG{n}{codigoPostalField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()));}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setCiudad}\PYG{p}{(}\PYG{n}{ciudadField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{());}
+			\PYG{n}{persona}\PYG{p}{.}\PYG{n+na}{setOnomastico}\PYG{p}{(}\PYG{n}{DateUtil}\PYG{p}{.}\PYG{n+na}{parse}\PYG{p}{(}\PYG{n}{onomasticoField}\PYG{p}{.}\PYG{n+na}{getText}\PYG{p}{()));}
+			\PYG{n}{okClicked} \PYG{o}{=} \PYG{k+kc}{true}\PYG{p}{;}
+			\PYG{n}{dialogStage}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+		\PYG{p}{\PYGZcb{}}
+	\PYG{p}{\PYGZcb{}}
+	\PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Se llama cuando el usuario hace clic en cancelar.}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{handleCancel}\PYG{p}{()\PYGZob{}}
+		\PYG{n}{dialogStage}\PYG{p}{.}\PYG{n+na}{close}\PYG{p}{();}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

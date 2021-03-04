@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/**}
+\PYG{c+cm}{	 * Se llama cuando el usuario hace clic en el botón Eliminar.}
+\PYG{c+cm}{	 */}
+	\PYG{n+nd}{@FXML}
+	\PYG{k+kd}{private} \PYG{k+kt}{void} \PYG{n+nf}{handleDeletePersona}\PYG{p}{()\PYGZob{}}
+		\PYG{k+kt}{int} \PYG{n}{selectedIndex} \PYG{o}{=} \PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{getSelectionModel}\PYG{p}{().}\PYG{n+na}{getSelectedIndex}\PYG{p}{();}
+		\PYG{n}{personTable}\PYG{p}{.}\PYG{n+na}{getItems}\PYG{p}{().}\PYG{n+na}{remove}\PYG{p}{(}\PYG{n}{selectedIndex}\PYG{p}{);}
+	\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
