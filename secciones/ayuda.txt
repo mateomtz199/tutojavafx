@@ -9,3 +9,11 @@ Código
     ]{java}
     
 \end{minted}
+
+Imagen
+\begin{figure}[H]
+	\includegraphics[width=11cm]{img/MainApp}
+\end{figure}
+
+Url
+\textcolor{azul}{\href{https://docs.oracle.com/javase/8/docs/api/}{Java 8 API}}

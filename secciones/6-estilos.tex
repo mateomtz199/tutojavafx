@@ -194,18 +194,27 @@ nuestros archivos FXML:\\
 \subsubsection*{Añade el CSS a RootLayout.fxml}
 \begin{enumerate}
     \item Abre el archivo \codigo{RootLayout.fxml} en \textit{Scene Builder}.
-    %Imagen
     \item Selecciona el \codigo{BorderPane} raíz en la sección \textit{Hiperarchy}. En la vista \textit{Properties} añade 
     el archivo \codigo{DarkTheme.css} como hoja de estilo (campo denominado \codigo{Stylesheets}).
-    %Imagen
+    \begin{figure}[H]
+        \includegraphics{img/6-1-Hierachy.png}
+    \end{figure}
+    \begin{figure}[H]
+        \includegraphics{img/6-2-SelectCSS.png}
+    \end{figure}
 \end{enumerate}
 
 \subsubsection*{Añade el CSS a PersonEditDialog.fxml}
 \begin{enumerate}
     \item Abre el archivo \codigo{PersonEditDialog.fxml} en \textit{Scene Builder}. Selecciona el \codigo{AnchorPane} 
     raíz e incluye \codigo{DarkTheme.css} como hoja de estilo en la sección \textit{Properties}.
+    \begin{figure}[H]
+        \includegraphics{img/6-3-SelectAnchorPane.png}
+    \end{figure}
     \item El fondo todavía es blanco, hay que añadir la clase \codigo{background} al \codigo{AnchorPane} raíz.
-    %Imagen
+    \begin{figure}[H]
+        \includegraphics{img/6-4-AddCSS.png}
+    \end{figure}
     \item Selecciona el botón OK y elige \textit{Default Button} en la vista \textit{Properties}. Eso cambiará su 
     color y lo convertirá en el botón “por defecto”, el que se ejecutará si el usuario aprieta la tecla \textit{enter}.
 \end{enumerate}
@@ -213,16 +222,26 @@ nuestros archivos FXML:\\
 \begin{enumerate}
     \item Abre el archivo \codigo{PersonOverview.fxml} en \textit{Scene Builder}. Selecciona el \codigo{AnchorPane} raíz 
     en la sección \textit{Hierarchy} y añade \codigo{DarkTheme.css} a sus \codigo{Stylesheets}.
+    \begin{figure}[H]
+        \includegraphics{img/6-5-AnchorPane.png}
+    \end{figure}
+    \begin{figure}[H]
+        \includegraphics{img/6-6-SelectDark.png}
+    \end{figure}
     \item A estas alturas deberías haber observado algunos cambios: La tabla y los botones son negros. 
     Las clases de estilo \codigo{.table-view} y \codigo{.button} de \codigo{modena.css} se aplican automáticamente a la tabla y 
     los botones. Ya que hemos redefinido (sobreescrito) algunos de esos estilos en nuestro propio CSS, 
     los nuevos estilos se aplican automáticamente.
     \item Posiblemente tengas que ajustar el tamaño de los botones para que se muestre todo el texto.
     \item Selecciona el panel \codigo{AnchorPane} de la derecha, dentro del \codigo{SplitPane}.
-    %Imagennnnnnnnnn
+    \begin{figure}[H]
+        \includegraphics{img/6-7-AnchorPane.png}
+    \end{figure}
     \item Ves a la vista \textit{Properties} y elige \codigo{background} como clase de estilo. 
     El fondo debería volverse negro.
-    %Imagennnnnnnnnnnnn
+    \begin{figure}[H]
+        \includegraphics{img/6-8-BackGround.png}
+    \end{figure}
 \end{enumerate}
 
 \subsubsection*{Etiquetas con un estilo diferente}
@@ -232,24 +251,31 @@ que vamos a usar para personalizar la apariencia de las etiquetas.
 \begin{enumerate}
     \item Selecciona la etiqueta (\codigo{Label}) \textit{Detalle de personas} y añade \codigo{label-header} 
     como clase de estilo.
-    %Imagennn
+    \begin{figure}[H]
+        \includegraphics{img/6-9-DetallePerson.png}
+    \end{figure}
     \item A cada etiqueta en la columna de la derecha (donde se muestran los detalles 
     de una persona), añade la clase de estilo \codigo{label-bright}.
-    %Imagen
+    \begin{figure}[H]
+        \includegraphics{img/6-10-labelBright.png}
+    \end{figure}
 \end{enumerate}
 
 \section{Añadiendo un icono a la aplicación}
 Ahora mismo nuestra aplicación utiliza el icono por defecto para la barra de título y la barra de tareas:\\
-%Imagen
 Quedaría mucho mejor con un icono propio:\\
-%Imagen}
+\begin{figure}[H]
+	\includegraphics[width=11cm]{img/6-11-icono.png}
+\end{figure}
 \subsection{El archivo de icono}
-Un posible sitio para obtener iconos gratuitos es Icon Finder. %Revisar, ya no existe la página
+Un posible sitio para obtener iconos gratuitos es \textcolor{azul}{\href{https://www.iconfinder.com/}{Icon Finder}}. %Revisar, ya no existe la página
 Yo por ejemplo descargué este icono de libreta de direcciones.\\
 Crea una carpeta dentro de tu aplicación llamado \textbf{resources} y añádele una subcarpeta 
 para almacenar imágenes, llámala \textbf{images}. Pon el icono que hayas elegido dentro de la 
 carpeta de imágenes. La estructura de directorios de tu carpeta debe tener un aspecto similar a este:
-%Imagennnnnnnnnnn
+\begin{figure}[H]
+	\includegraphics[width=11cm]{img/6-12-selectIcon.png}
+\end{figure}
 \subsection{Establece el icono de la escena principal}
 Para establecer el icono de nuestra escena debemos añadir la línea de 
 código siguiente al método \codigo{start(...)} dentro de \codigo{MainApp.java}.\\
